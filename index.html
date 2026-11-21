@@ -1,0 +1,1402 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f2f2f7"><meta name="robots" content="noindex, nofollow"><title>SiteReport · Diagnostic et expertise</title><meta name="apple-mobile-web-app-title" content="SiteReport"><link rel="manifest" href="./manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" href="./icon-192.png"><style>
+:root{
+  --page:#f3e9dd;
+  --surface:#faf3ea;
+  --beige:#eadbcd;
+  --edge:#dccabb;
+  --ink:#422c2a;
+  --muted-ink:#765b54;
+  --label:#784b43;
+  --terracotta:#a95647;
+  --terracotta-hover:#91483d;
+  --bordeaux:#7d414e;
+  --blush:#eed3c6;
+  --focus:#ac6256;
+  --hero-peach:#ecc8b8;
+  --hero-cream:#f4e5d7;
+  --hero-watermark:#fff6;
+  --on-action:#fff;
+  --action-shadow:#b85d4820;
+  --card-shadow:#5a251c09;
+  --photo-count-bg:#e8eacb;
+  --photo-count-ink:#667344;
+  --backdrop:#321e2088;
+  --camera-bg:#201b1b;
+  --radius-panel:22px;
+  --radius-control:15px;
+  --type-title:clamp(25px,4vw,39px);
+  --type-section:21px;
+  --type-card:18px;
+  --type-body:1rem;
+  --type-label:0.875rem;
+  --type-action-weight:750;
+  --type-interior-weight:600;
+  --type-title-spacing:-1px;
+  font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--page);color:var(--ink)}*{box-sizing:border-box}body{margin:0}button,input,textarea,select{font:inherit}button{cursor:pointer;border:0;text-align:center}button:focus-visible,a:focus-visible{outline:2px solid var(--focus);outline-offset:3px}button:disabled{opacity:.45;cursor:not-allowed}.shell{max-width:1150px;margin:auto;min-height:100dvh}.top{gap:12px;position:sticky;top:0;z-index:11;background:var(--page);display:flex;align-items:center;justify-content:space-between;padding:25px 24px 14px}.brand{display:flex;align-items:center;flex:0 1 260px;min-width:0;min-height:44px;background:transparent;padding:0;border-radius:8px}.brand:focus-visible{outline:2px solid var(--bordeaux);outline-offset:4px}.muted{color:var(--muted-ink)}.small{font-size:12px}.iconbtn{background:var(--beige);border-radius:13px;color:var(--label);padding:11px 13px}.content{padding:12px 24px 100px}.hero{text-align:center;isolation:isolate;border-radius:28px;background:linear-gradient(120deg,var(--hero-peach),var(--hero-cream) 75%);padding:26px;margin-bottom:22px;position:relative;overflow:hidden}.hero:after{content:'⌂';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:-1;font-size:210px;color:var(--hero-watermark);pointer-events:none}.hero h1{font-size:var(--type-title);letter-spacing:var(--type-title-spacing);margin:0 0 8px}.hero p{margin:0;color:var(--muted-ink)}.hero button{margin-top:22px}.btn{border-radius:var(--radius-control);padding:14px 19px;font-weight:var(--type-action-weight);background:var(--terracotta);color:var(--on-action);box-shadow:0 5px 14px var(--action-shadow)}.btn:not([hidden]),.iconbtn,.tab{display:inline-grid;place-content:center}.btn:hover{background:var(--terracotta-hover)}.btn.light:hover{background:var(--blush)}.btn.light{background:var(--beige);color:var(--label);box-shadow:none}.btn.full{width:100%}.btn.danger{background:var(--blush);color:var(--bordeaux);box-shadow:none}.btn.danger:hover{background:var(--beige)}.quick{display:grid;grid-template-columns:minmax(0,1fr);gap:13px;margin:0 0 26px}.drive-logo{vertical-align:middle;object-fit:contain}.sectionhead{display:flex;justify-content:space-between;align-items:center;margin:15px 0}.sectionhead h2{font-size:var(--type-section);margin:0}.search{width:100%;border:1px solid var(--edge);border-radius:14px;padding:13px 15px;background:var(--surface);outline:none}.search:focus,input:focus,textarea:focus{border-color:var(--focus);outline:2px solid var(--focus)}.missionlist{display:grid;gap:12px}.missioncard{background:var(--surface);border:1px solid var(--edge);border-radius:20px;padding:19px;box-shadow:0 5px 18px var(--card-shadow);text-align:left;width:100%;color:inherit}.missioncard h3{font-size:var(--type-card);margin:0 0 5px}.pill{font-size:12px;display:inline-block;background:var(--blush);color:var(--label);padding:6px 10px;border-radius:99px;margin:4px 5px 0 0}.pill.active{background:var(--photo-count-bg);color:var(--photo-count-ink)}.row{display:flex;gap:10px;align-items:center;justify-content:space-between}.view{display:none}.view.active{display:block}.formcard{background:var(--surface);border:1px solid var(--edge);border-radius:var(--radius-panel);padding:22px;margin-bottom:18px}.formcard h2{margin:0 0 15px}.field{margin-bottom:15px}.field label{display:block;font-size:13px;font-weight:750;margin-bottom:7px}.field input,.field textarea,.field select{width:100%;padding:13px 14px;background:var(--surface);border:1px solid var(--edge);border-radius:13px;color:var(--ink)}.field textarea{min-height:95px;resize:vertical}.diagnostics{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.diag{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;border:1.5px solid var(--edge);background:var(--surface);border-radius:17px;padding:15px 6px;min-height:102px;color:var(--label);text-align:center;font-size:13px;font-weight:700;position:relative}.diag.selected{border-color:var(--bordeaux);box-shadow:inset 0 0 0 2px var(--bordeaux)}.diag.selected:after{content:'✓';position:absolute;top:5px;right:6px;font-size:13px;line-height:20px;width:20px;border-radius:50%;background:var(--bordeaux);color:var(--on-action)}.diag:focus-visible{outline:3px solid var(--focus)}.bar{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.bar .btn{flex:1}.reference{padding:14px;background:var(--blush);border-radius:14px;color:var(--label);font-weight:800;letter-spacing:.5px}.tabs{display:flex;gap:9px;overflow-x:auto;padding:5px 0 13px}.tab{white-space:nowrap;background:var(--beige);border-radius:13px;padding:12px 15px;color:var(--label);font-weight:750}.tab.selected{background:var(--bordeaux);color:var(--on-action)}.photoGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}.photocard{border:1px solid var(--edge);border-radius:16px;overflow:hidden;background:var(--surface);text-align:left;color:inherit;padding:0}.photocard img{width:100%;height:150px;object-fit:cover;display:block}.photocard .info{padding:10px}.photocard .info strong{display:block;overflow-wrap:anywhere;font-size:13px}.photocard .info small{color:var(--muted-ink)}.empty{padding:35px 18px;text-align:center;background:var(--surface);border:1px dashed var(--edge);border-radius:20px;color:var(--muted-ink)}.bottom{position:fixed;bottom:0;left:0;right:0;background:var(--surface);border-top:1px solid var(--edge);backdrop-filter:blur(14px);display:flex;justify-content:center;z-index:10;padding:9px 10px max(10px,env(safe-area-inset-bottom))}.bottom[hidden]{display:none}.bottom button{background:transparent;color:var(--muted-ink);padding:7px 22px;min-width:95px;font-size:12px;font-weight:750}.bottom button b{display:block;font-size:21px;margin-bottom:2px}.bottom button.active{color:var(--terracotta)}.overlay{position:fixed;inset:0;background:var(--backdrop);display:none;place-items:center;z-index:20;padding:12px}.overlay.open{display:grid}.modal{background:var(--surface);border-radius:var(--radius-panel);padding:22px;width:min(560px,100%);max-height:92dvh;overflow:auto}dialog.modal{border:0;color:inherit}dialog.modal::backdrop{background:var(--backdrop)}.modal h2{margin-top:0}.modal img{max-width:100%;max-height:210px;object-fit:contain;border-radius:12px}.toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:var(--bordeaux);color:var(--on-action);padding:12px 18px;border-radius:var(--radius-control);display:none;z-index:40;white-space:nowrap}@media(min-width:850px){.dashboard{display:grid;grid-template-columns:1fr 1fr;gap:24px}.dashboard .hero{grid-column:1/-1}.dashboard .quick{grid-column:1/-1}.content{padding-bottom:110px}.formwrap{max-width:760px;margin:auto}}@media(max-width:600px){.top{padding:18px 16px 8px}.content{padding:10px 14px 105px}.quick{gap:8px}.hero{padding:22px}.diagnostics{grid-template-columns:repeat(3,1fr);gap:8px}.diag{min-height:94px;font-size:12px}.bottom button{min-width:0;flex:1;padding:6px}.formcard{padding:16px}}@media print{.top,.bottom,.bar,.quick,.hero,.search,.tabs,.no-print{display:none!important}.view{display:none!important}#detailView{display:block!important}.photocard{break-inside:avoid}}
+.cameraView{width:100%;max-height:65dvh;object-fit:contain;background:var(--camera-bg);border-radius:18px}.cameraActions{display:flex;flex-wrap:wrap;gap:10px;margin-top:15px}.cameraActions button{flex:1}.cameraHint{font-size:13px;color:var(--muted-ink);margin-top:10px}.cameraModal{width:min(700px,100%)}.cameraModal .field{margin-top:12px}.modal input,.modal textarea,.modal select{font-size:16px}.toast{max-width:calc(100% - 24px);white-space:normal}
+
+.mission-swipe{--action-width:116px;position:relative;overflow:hidden;border-radius:20px;touch-action:pan-y pinch-zoom}
+.mission-swipe .missioncard{position:relative;display:block;transition:transform .18s ease}
+.mission-swipe.revealed .missioncard{transform:translateX(calc(-1 * var(--action-width)))}
+.mission-swipe .missioncard:focus-visible{outline:2px solid var(--bordeaux);outline-offset:-3px}
+.mission-swipe .swipe-delete{position:absolute;inset:0 0 0 auto;width:var(--action-width);background:var(--bordeaux);color:var(--on-action);font-weight:750}
+@media(prefers-reduced-motion:reduce){.mission-swipe .missioncard{transition:none}}
+
+
+.diag[data-code="A"] .diag-art{aspect-ratio:237/160;width:min(100%,118.50px);background-size:540.0844% 769.3750%;background-position:12.5599% 11.1111%}
+.diag[data-code="E"] .diag-art{aspect-ratio:205/150;width:min(100%,109.33px);background-size:624.3902% 820.6667%;background-position:48.7442% 11.2858%}
+.diag[data-code="P"] .diag-art{aspect-ratio:208/151;width:min(100%,110.20px);background-size:615.3846% 815.2318%;background-position:82.5560% 11.3889%}
+.diag[data-code="G"] .diag-art{aspect-ratio:201/195;width:min(100%,82.46px);background-size:636.8159% 631.2821%;background-position:14.5505% 36.9691%}
+.diag[data-code="D"] .diag-art{aspect-ratio:223/164;width:min(100%,108.78px);background-size:573.9910% 750.6098%;background-position:47.8713% 36.8322%}
+.diag[data-code="T"] .diag-art{aspect-ratio:176/169;width:min(100%,83.31px);background-size:727.2727% 728.4024%;background-position:80.0725% 36.7232%}
+.diag[data-code="U"] .diag-art{aspect-ratio:215/144;width:min(100%,119.44px);background-size:595.3488% 854.8611%;background-position:14.4601% 61.5455%}
+.diag[data-code="V"] .diag-art{aspect-ratio:218/157;width:min(100%,111.08px);background-size:587.1560% 784.0764%;background-position:47.6460% 62.2905%}
+.diag[data-code="S"] .diag-art{aspect-ratio:190/145;width:min(100%,104.83px);background-size:673.6842% 848.9655%;background-position:80.0000% 61.8785%}
+
+.mission-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(7px,2vw,12px);margin-top:20px;padding:clamp(8px,2.5vw,16px);border:1px solid var(--edge);border-radius:var(--radius-panel);background:var(--surface)}
+.mission-actions .btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:82px;padding:10px 2px;font-size:clamp(13px,3.8vw,17px);box-shadow:none}
+.mission-actions .btn.light{border:1px solid var(--edge);color:var(--ink)}
+.mission-actions .btn svg{width:clamp(23px,6vw,32px);height:clamp(23px,6vw,32px);fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.mission-actions #sendMission{font-size:clamp(11px,3.2vw,16px)}
+.mission-actions .mission-print{grid-column:1/-1;flex-direction:row;min-height:58px;gap:12px}
+
+.modal a{color:var(--bordeaux)}
+
+[data-diagnostic="A"]{--diagnostic-bg:#fae3dd;--diagnostic-ink:#853c43}
+[data-diagnostic="E"]{--diagnostic-bg:#faeccb;--diagnostic-ink:#774d04}
+[data-diagnostic="P"]{--diagnostic-bg:#f0e0ed;--diagnostic-ink:#75396b}
+[data-diagnostic="G"]{--diagnostic-bg:#f9dfd0;--diagnostic-ink:#9b3e22}
+[data-diagnostic="D"]{--diagnostic-bg:#e9ebd3;--diagnostic-ink:#4d5d20}
+[data-diagnostic="T"]{--diagnostic-bg:#f1e7dc;--diagnostic-ink:#6b4935}
+[data-diagnostic="U"]{--diagnostic-bg:#dceee5;--diagnostic-ink:#23614e}
+[data-diagnostic="V"]{--diagnostic-bg:#e7e4f3;--diagnostic-ink:#51447a}
+[data-diagnostic="S"]{--diagnostic-bg:#dfecf7;--diagnostic-ink:#285a7a}
+.diag[data-diagnostic],.pill[data-diagnostic],.tab[data-diagnostic]{background:var(--diagnostic-bg,var(--beige));color:var(--diagnostic-ink,var(--label))}
+.diag[data-diagnostic].selected{border-color:currentColor;box-shadow:inset 0 0 0 2px currentColor}
+.diag[data-diagnostic].selected::after{background:var(--diagnostic-ink,var(--bordeaux))}
+.tab[data-diagnostic].selected{box-shadow:inset 0 0 0 1px currentColor}
+
+.quick{padding:clamp(8px,2.6vw,15px);border-radius:var(--radius-panel);background:var(--surface);border:1px solid var(--edge)}
+.missions-shortcut{width:100%;min-height:60px;display:flex;align-items:center;justify-content:center;gap:clamp(10px,3vw,19px);padding:12px 10px;border-radius:var(--radius-control);background:linear-gradient(120deg,var(--blush),var(--beige));color:var(--ink);font-size:clamp(1rem,4.6vw,1.35rem);font-weight:750}
+.missions-shortcut svg{flex:none;width:clamp(28px,8vw,39px);height:auto;fill:none;stroke:var(--terracotta);stroke-width:2.25;stroke-linejoin:round;stroke-linecap:round}
+.missions-shortcut .shortcut-house{stroke:var(--bordeaux)}
+.missions-shortcut:hover{background:var(--blush)}
+
+#missionsView > .sectionhead h2,#newView .formwrap > .sectionhead h2,#detailAddress{
+  font-size:var(--type-title);letter-spacing:var(--type-title-spacing)
+}
+#detailAddress{overflow-wrap:anywhere}
+#detailView > .formcard > .row > :first-child{min-width:0}
+#detailView > .formcard > .row > button{flex:none}
+#newView .formcard h2,.modal h2{font-size:var(--type-section);letter-spacing:-.35px}
+#newView .field label,.modal .field label,.cameraHint,
+#newView .small,#detailView .small,.photocard .info strong,.photocard .info small{
+  font-size:var(--type-label)
+}
+#detailOwner,.view .field input,.view .field textarea,.view .field select,
+.modal input,.modal textarea,.modal select,.view .search{
+  font-size:var(--type-body)
+}
+.diag[data-diagnostic],.bottom button{font-size:var(--type-label)}
+.mission-actions .btn{font-size:clamp(var(--type-label),4vw,var(--type-body))}
+.mission-actions #sendMission{font-size:clamp(.75rem,3.4vw,var(--type-body))}
+
+.mission-actions .zip-label{fill:var(--beige)}
+.btn.photo-action{display:inline-flex;justify-content:center;align-items:center;gap:8px}
+.action-icon{width:1.25em;height:1.25em;flex:none;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.view:not(#homeView) .btn,.view:not(#homeView) .tab,.view:not(#homeView) .diag,
+.modal .btn,.modal .diag,.bottom button{
+  font-weight:var(--type-interior-weight)
+}
+#detailAddress,#detailView .sectionhead h2,#detailRef,
+#missionsView > .sectionhead h2,#newView h2,.modal h2{
+  font-weight:var(--type-interior-weight)
+}
+#detailAddress{font-size:var(--type-section);letter-spacing:-.35px}
+#detailRef{letter-spacing:.15px}
+.brand-art{display:block;width:100%;aspect-ratio:772/196}
+/* The source logo has an off-white paper background. Bring it to white before blending with the cream header. */
+.brand-art img{display:block;width:100%;height:auto}
+.top #backupBtn{flex:none;min-height:44px;white-space:nowrap}
+@media(max-width:380px){.top{gap:9px}.top #backupBtn{padding-inline:10px;font-size:var(--type-label)}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:-6px 0 14px}
+.chip{min-height:38px;padding:6px 14px;border-radius:999px;border:1px solid var(--edge);background:var(--beige);color:var(--ink);font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.chip.recent{background:var(--blush);border-color:transparent}
+.chip:focus-visible{outline:2px solid var(--bordeaux);outline-offset:2px}
+#saveNext{width:100%;margin-top:20px}
+#saveNext+.bar{margin-top:10px}
+#backupBtn{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;flex:none}
+#backupBtn.needs-attention{background:var(--blush);color:var(--bordeaux);font-weight:700}
+
+/* ===== Style façon Apple ===== */
+:root{--page:#f2f2f7;--surface:#fff;--beige:#e9e9ee;--edge:#e5e5ea;--ink:#1c1c1e;--muted-ink:#6e6e73;--label:#1e4d3a;--terracotta:#c4501e;--terracotta-hover:#a9431a;--bordeaux:#1e4d3a;--blush:#fbe3d6;--focus:#c4501e;--action-shadow:transparent;--card-shadow:transparent;--radius-control:12px;--radius-panel:16px;--on-action:#fff}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Inter,sans-serif;background:var(--page);color:var(--ink);-webkit-font-smoothing:antialiased}
+.top{background:rgba(242,242,247,.92);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);padding:10px 16px 6px;min-height:56px;gap:8px}
+.top-spacer{flex:1}
+.top-back,.top-link{background:none;border:0;color:var(--terracotta);font:inherit;font-size:17px;padding:8px 2px;min-height:44px;cursor:pointer;white-space:nowrap}
+.top-back:not([hidden]),.top-link:not([hidden]){display:inline-flex;align-items:center}
+.top-add{width:38px;height:38px;border-radius:11px;background:var(--terracotta);color:#fff;font-size:22px;line-height:1;border:0;cursor:pointer}
+.top-add:not([hidden]){display:grid;place-content:center}
+.badge{display:inline-flex;align-items:center;gap:6px;background:#fff;border:0;border-radius:999px;padding:7px 12px;font:inherit;font-size:13px;font-weight:600;min-height:34px;white-space:nowrap;cursor:pointer}
+.badge svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linejoin:round}
+.state-ok{color:#1e4d3a}.state-busy{color:#3a3a3c}.state-off{color:#6e6e73}.state-wait{background:#fcebd9;color:#8a3b12}.state-alert{background:#fadada;color:#8e1f1f}
+.content{max-width:640px;margin:0 auto;padding:4px 16px 110px}
+.btn{border-radius:12px;font-weight:600;box-shadow:none}
+.btn.light{background:#fff;color:#1e4d3a}
+.btn.light:hover{background:#f7f7f9}
+.cover{text-align:center;padding:10px 0 24px}
+.cover-logo{width:min(260px,74%);height:auto;display:block;margin:0 auto 20px}
+.cover h1{font-size:30px;line-height:1.12;letter-spacing:-.5px;margin:0 0 8px;font-weight:700}
+.cover p{margin:0;color:var(--muted-ink);font-size:16px;line-height:1.4}
+.cta{min-height:52px;font-size:17px;margin-bottom:10px;display:flex!important;align-items:center;justify-content:center;gap:8px}
+.cta svg,.listrow svg,.bottom svg,.searchfield svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.cta svg{width:21px;height:21px}
+.searchfield{display:flex;gap:8px;align-items:center;width:100%;background:#e3e3e8;border:0;border-radius:11px;padding:0 12px;min-height:42px;color:#6e6e73;font:inherit;font-size:17px;text-align:left;cursor:text;margin:16px 0 24px;box-sizing:border-box}
+.searchfield svg{width:19px;height:19px}
+.searchbox{margin:0 0 12px}
+.searchbox input{flex:1;min-width:0;background:transparent;border:0;outline:none;font:inherit;font-size:17px;color:var(--ink);padding:9px 0}
+.searchbox:focus-within{box-shadow:0 0 0 2px var(--terracotta)}
+.group-title{font-size:13px;color:var(--muted-ink);margin:0 16px 7px}
+.group{background:#fff;border-radius:14px;overflow:hidden;margin-bottom:22px}
+.group .empty{border:0;border-radius:0;margin:0}
+.mission-swipe{border-radius:0}
+.mission-swipe+.mission-swipe{border-top:.5px solid #e5e5ea}
+.mission-swipe .swipe-delete{background:#d92d20}
+.missioncard{display:flex!important;align-items:center;gap:12px;background:#fff;border:0;border-radius:0;box-shadow:none;padding:10px 14px;min-height:66px}
+.thumb{flex:none;width:48px;height:48px;border-radius:10px;overflow:hidden;background:#f2f2f7;display:grid;place-content:center;color:#c7c7cc}
+.thumb img{width:48px;height:48px;object-fit:cover;display:block}
+.thumb svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.6}
+.rowtext{flex:1;min-width:0}
+.rowtext strong{display:block;font-size:16px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rowtext small{display:block;font-size:13px;color:var(--muted-ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.35}
+.chev{color:#c7c7cc;font-size:24px;line-height:1;flex:none}
+.large-title{font-size:32px;font-weight:700;letter-spacing:-.6px;margin:4px 2px 12px;line-height:1.1}
+.detail-title{font-size:27px;margin-bottom:4px}
+.detail-sub{margin:0 2px 16px;color:var(--muted-ink);font-size:15px}
+.inforow{display:flex;justify-content:space-between;gap:12px;padding:12px 14px;font-size:16px}
+.inforow[hidden]{display:none}
+.inforow+.inforow{border-top:.5px solid #e5e5ea}
+.inforow>span:first-child{color:var(--muted-ink)}
+.inforow>span:last-child{text-align:right}
+.inforow .reference{padding:0;background:none;border-radius:0;color:var(--ink);font-weight:600;letter-spacing:.3px}
+.segmented{display:flex;gap:2px;background:#e3e3e8;border-radius:10px;padding:2px;margin:0 0 16px;overflow-x:auto}
+.segmented button,.segmented .tab,.segmented .tab[data-diagnostic]{flex:1 0 auto;background:transparent;border:0;border-radius:8px;padding:8px 12px;font:inherit;font-size:14px;font-weight:500;color:#1c1c1e;white-space:nowrap;min-height:36px;box-shadow:none}
+.segmented .selected,.segmented .tab.selected,.segmented .tab.selected[data-diagnostic]{background:#fff;color:#1c1c1e;font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.14)}
+.photoGrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.photoGrid .empty{grid-column:1/-1}
+.photocard{border:0;border-radius:10px;background:transparent}
+.photocard img{height:auto;aspect-ratio:1;border-radius:10px;background:#e5e5ea}
+.photocard .info{padding:4px 2px 2px}
+.photocard .info strong{font-size:11px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#3a3a3c}
+.photocard .info small{display:none}
+.photo-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0 22px}
+.photo-action{min-height:52px;font-size:17px}
+.listrow{display:flex;align-items:center;gap:12px;width:100%;background:#fff;border:0;padding:12px 14px;font:inherit;font-size:16px;color:#1c1c1e;text-align:left;min-height:50px;cursor:pointer}
+.listrow+.listrow{border-top:.5px solid #e5e5ea}
+.listrow svg{width:22px;height:22px;color:#1e4d3a}
+.listrow .chev{margin-left:auto}
+.listrow:disabled{color:#c7c7cc;cursor:default}
+.danger-row{justify-content:center;color:#d92d20}
+.bottom{background:rgba(249,249,249,.94);border-top:.5px solid #d1d1d6}
+.bottom button{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;font-weight:500;color:#8a8a8e;flex:1;max-width:170px;min-width:0;padding:6px 4px;font-family:inherit}
+.bottom button svg{width:25px;height:25px}
+.bottom button.active{color:var(--terracotta)}
+.formcard{border:0}
+.modal{border-radius:16px}
+
+.modal .btn.light{background:#f2f2f7;color:#1e4d3a}
+.modal .btn.light:hover{background:#e9e9ee}
+.modal .bar{gap:10px}
+.modal .bar .btn{flex:1 1 140px;min-height:48px}
+.send-modal{text-align:center;width:min(380px,100%)}
+.send-icon{width:56px;height:56px;border-radius:50%;display:grid;place-content:center;margin:2px auto 12px;background:#f2f2f7;color:#6e6e73}
+.send-icon svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.send-icon.tone-green{background:#e2ebdd;color:#1e4d3a}.send-icon.tone-red{background:#fadada;color:#8e1f1f}
+.send-modal h2{font-size:20px;margin:0 0 6px}
+.send-text{color:var(--muted-ink);margin:0 0 14px;font-size:15px}
+.send-folder{background:#f2f2f7;border-radius:12px;padding:10px 12px;text-align:left;margin:0 0 16px}
+.send-folder strong{display:block;font-size:14px;overflow-wrap:anywhere}
+.send-folder span{display:block;font-size:13px;color:var(--muted-ink);margin-top:2px}
+.send-progress{height:6px;border-radius:3px;background:#e5e5ea;overflow:hidden;margin:0 0 16px}
+.send-progress span{display:block;height:100%;width:0;background:var(--terracotta);transition:width .25s}
+.send-actions{display:grid;gap:8px}
+.send-actions .btn{min-height:50px;font-size:16px;text-decoration:none}
+.send-actions .btn[hidden]{display:none}
+.send-actions a.btn,.send-actions a.btn:visited{color:#fff}
+
+.facade-box{margin:0 0 16px}
+.facade-photo{position:relative;display:block;width:100%;padding:0;border:0;border-radius:14px;overflow:hidden;background:#e5e5ea;cursor:pointer}
+.facade-photo img{display:block;width:100%;height:190px;object-fit:cover}
+.facade-tag,.facade-change{position:absolute;bottom:10px;font-size:13px;border-radius:8px;padding:4px 9px}
+.facade-tag{left:10px;background:rgba(0,0,0,.55);color:#fff}
+.facade-change{right:10px;background:#fff;color:var(--terracotta);font-weight:600}
+.facade-add,.facade-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;width:100%;min-height:120px;border:1.5px dashed #c7c7cc;border-radius:14px;background:#fff;color:var(--terracotta);font:inherit;font-size:16px;font-weight:600;cursor:pointer}
+.facade-empty{background:#f2f2f7;color:#6e6e73;font-size:13px;font-weight:500;margin-bottom:14px;cursor:default}
+.facade-add svg,.facade-empty svg,#facadeNow svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#facadeNow{display:flex!important;align-items:center;justify-content:center;gap:8px}
+#facadeNow svg{width:21px;height:21px}
+.todo{color:var(--terracotta)}
+
+#facadePick{display:flex!important;align-items:center;justify-content:center;gap:8px}
+#facadePick svg,.sheet-group svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.link-later{background:none;border:0;color:var(--muted-ink);font:inherit;font-size:15px;padding:10px;min-height:44px;cursor:pointer}
+.sheet-overlay.open{display:flex;align-items:flex-end;justify-content:center}
+.sheet{width:min(420px,100%);padding:0 8px max(10px,env(safe-area-inset-bottom))}
+.sheet-group{background:rgba(255,255,255,.97);border-radius:14px;overflow:hidden;margin-bottom:8px;text-align:center}
+.sheet-title{font-size:13px;color:var(--muted-ink);padding:12px;margin:0;border-bottom:.5px solid #d1d1d6}
+.sheet-group button{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;background:none;border:0;font:inherit;font-size:18px;color:var(--terracotta);padding:15px 0;min-height:56px;cursor:pointer}
+.sheet-group button+button{border-top:.5px solid #d1d1d6}
+.sheet-cancel{width:100%;background:#fff;border:0;border-radius:14px;font:inherit;font-size:18px;font-weight:600;color:var(--terracotta);padding:15px 0;min-height:56px;cursor:pointer}
+
+.diagnostics{display:block}
+.diag-group{font-size:13px;color:var(--muted-ink);margin:10px 4px 8px}
+.diag-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:6px}
+.diag,.diag[data-diagnostic]{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;background:#fff;color:var(--ink);border:1px solid #e5e5ea;border-radius:14px;padding:12px 4px 10px;min-height:104px;box-shadow:none;font:inherit;cursor:pointer}
+.diag svg{width:56px;height:56px;flex:none}
+.diag-label{font-size:13px;font-weight:600;line-height:1.15;text-align:center}
+.diag.selected,.diag[data-diagnostic].selected{border:2px solid var(--terracotta);background:#fff5ef;box-shadow:none;padding:11px 3px 9px;color:var(--ink)}
+.diag.selected::after,.diag[data-diagnostic].selected::after{content:'✓';position:absolute;top:6px;right:6px;width:20px;height:20px;line-height:20px;border-radius:50%;background:var(--terracotta);color:#fff;font-size:12px;font-weight:700;text-align:center}
+.diag:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+</style></head><body><div class="shell"><header class="top"><button type="button" class="top-back" id="topBack" hidden>‹ Missions</button><span class="top-spacer"></span><button type="button" class="badge state-off" id="backupBtn" title="Sauvegarde"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a4.5 4.5 0 0 1-.6-9 6 6 0 0 1 11.6 1.5A3.8 3.8 0 0 1 17.5 18Z"/></svg><span id="backupLabel">Sauvegarde</span></button><button type="button" class="top-link" id="editMission" hidden>Modifier</button><button type="button" class="top-add" id="topAdd" aria-label="Nouvelle mission" hidden>＋</button></header><main class="content">
+<section class="view active" id="homeView"><div class="cover"><img class="cover-logo" src="./sitereport-logo.svg" alt="SiteReport, diagnostic et expertise" width="772" height="196"><h1>Vos missions,<br>simplement.</h1><p>Photographiez, nommez et classez<br>sur le terrain.</p></div><button type="button" class="btn full cta" data-go="new">＋ Nouvelle mission</button><button type="button" class="btn light full cta cta2" data-go="missions"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>Toutes mes missions</button><button type="button" class="searchfield" id="homeSearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>Rechercher</button><p class="group-title">Récentes</p><div id="recent" class="group"></div></section>
+<section class="view" id="missionsView"><h1 class="large-title">Missions</h1><label class="searchfield searchbox"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><input id="search" type="search" enterkeyhint="search" placeholder="Adresse, réf., diagnostic, photo" aria-label="Rechercher une mission"></label><div class="segmented" id="missionFilter" role="group" aria-label="Filtrer les missions"><button type="button" data-filter="all" class="selected" aria-pressed="true">Toutes</button><button type="button" data-filter="diag" aria-pressed="false">Diagnostics</button><button type="button" data-filter="exp" aria-pressed="false">Expertise</button></div><div id="allMissions"></div></section>
+<section class="view" id="newView"><div class="formwrap"><div class="sectionhead"><h2>Nouvelle mission</h2><button class="btn light" data-go="home">Fermer</button></div><form id="missionForm"><div class="formcard"><h2>Le bien</h2><div class="field"><label>Adresse du bien *</label><input id="address" required placeholder="3 allée des Tulipes, 60100 Creil"></div><div class="field"><label>Propriétaire / contact</label><input id="owner" placeholder="M. Richard"></div><div class="field"><label>Complément (bâtiment, étage, lot…)</label><input id="unit" placeholder="Bâtiment A, 2e étage droite"></div><div class="field"><label>Date de la mission</label><input type="date" id="missionDate" required></div></div><div class="formcard"><h2>Diagnostics</h2><p class="muted small">Sélectionnez un ou plusieurs diagnostics. Vous pourrez les modifier ensuite.</p><div class="diagnostics" id="diagnosticPicker"></div></div><div class="formcard"><h2>03 · Référence automatique</h2><div class="reference" id="refPreview">—</div><p class="muted small">Code du mois + année + diagnostics + compteur du mois. La référence reste fixe après création.</p><button class="btn full" type="submit">Créer et ouvrir la mission →</button></div></form></div></section>
+<section class="view" id="detailView"><h1 class="large-title detail-title" id="detailAddress"></h1><p class="detail-sub" id="detailOwner"></p><div id="facadeBox" class="facade-box no-print"></div><div class="group info"><div class="inforow"><span>Référence</span><span id="detailRef" class="reference"></span></div><div class="inforow" id="detailUnitRow"><span>Complément</span><span id="detailUnit"></span></div><div class="inforow"><span>Photos</span><span id="photoCount"></span></div></div><div class="segmented tabs" id="diagTabs"></div><div id="photoGrid" class="photoGrid"></div><div class="photo-actions no-print"><button class="btn photo-action" id="takePhoto"><svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h4l2-3h4l2 3h4a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"/><circle cx="12" cy="13" r="3.4"/></svg><span>Photo</span></button><button class="btn light photo-action" id="addPhoto"><svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8" r="1.5"/><path d="m4 17 5-5 4 4 3-3 4 4"/></svg><span>Galerie</span></button></div><div class="group no-print"><button type="button" class="listrow" id="exportMission"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M12 10v6m-2.5-2.5L12 16l2.5-2.5"/></svg><span>Télécharger le dossier</span><span class="chev" aria-hidden="true">›</span></button><button type="button" class="listrow" id="printMission"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l5 5v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm8 0v5h5M8 13h8M8 17h5"/></svg><span>Créer le PDF</span><span class="chev" aria-hidden="true">›</span></button><button type="button" class="listrow" id="sendMission"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6l6 10.5-3 5.5H6l-3-5.5Zm0 0 6 10.5M15 3 9 13.5M3 13.5h18"/></svg><span>Envoyer vers Google Drive</span><span class="chev" aria-hidden="true">›</span></button></div><div class="group no-print"><button type="button" class="listrow danger-row" id="deleteMission">Supprimer la mission</button></div></section>
+
+</main></div><nav class="bottom" aria-label="Navigation principale" hidden><button type="button" data-go="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1Z"/></svg>Accueil</button><button type="button" data-go="missions" id="navMissions"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>Missions</button><button type="button" id="navSearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>Rechercher</button></nav>
+<input type="file" id="fileInput" accept="image/*" multiple hidden><input type="file" id="cameraInput" accept="image/*" capture="environment" hidden><input type="file" id="facadeInput" accept="image/*" hidden><div class="overlay sheet-overlay" id="facadeSheet" role="dialog" aria-modal="true" aria-label="Photo de façade"><div class="sheet"><div class="sheet-group"><p class="sheet-title">Photo de façade</p><button type="button" id="sheetTake"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h4l2-3h4l2 3h4a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"/><circle cx="12" cy="13" r="3.4"/></svg> Prendre une photo</button><button type="button" id="sheetPick"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8" r="1.5"/><path d="m4 17 5-5 4 4 3-3 4 4"/></svg> Choisir dans la pellicule</button></div><button type="button" class="sheet-cancel" id="sheetCancel">Annuler</button></div></div><div class="overlay" id="editorOverlay"><div class="modal"><h2>Nommer la photo</h2><img id="photoPreview"><form id="photoForm"><div class="field"><label>Nom court *</label><input id="photoLabel" required placeholder="Chaudière, compteur gaz…"></div><div class="chips" id="nameChips" aria-label="Noms rapides"></div><div class="muted small" id="filePreview" style="margin:-7px 0 12px"></div><div class="field"><label>Localisation</label><input id="photoLocation" placeholder="Cuisine, RDC…"></div><div class="field"><label>Observation (facultatif)</label><textarea id="photoNote" placeholder="Observation sur le terrain…"></textarea></div><button type="button" class="btn" id="saveNext">📷 Enregistrer et photo suivante</button><div class="bar"><button type="submit" class="btn light">Enregistrer</button><button type="button" class="btn light" id="closeEditor">Annuler</button><button type="button" class="btn danger" id="removePhoto">Supprimer</button></div></form></div></div><div class="overlay" id="diagOverlay"><div class="modal"><h2>Modifier la mission</h2><div class="field"><label for="editAddress">Adresse du bien *</label><input id="editAddress" required></div><div class="field"><label for="editOwner">Propriétaire / contact</label><input id="editOwner"></div><div class="field"><label for="editUnit">Complément (bâtiment, étage, lot…)</label><input id="editUnit"></div><div class="field"><label for="editDate">Date de la mission</label><input type="date" id="editDate" required></div><h3 style="margin:18px 0 10px">Diagnostics</h3><div class="diagnostics" id="editPicker"></div><div class="bar"><button class="btn" id="saveDiagnostics">Enregistrer</button><button class="btn light" id="closeDiagnostics">Annuler</button></div><p class="muted small">La référence initiale ne change pas afin de conserver l'identifiant permanent du dossier.</p></div></div><div class="overlay" id="cameraOverlay"><div class="modal cameraModal" role="dialog" aria-modal="true" aria-labelledby="cameraTitle"><h2 id="cameraTitle">📷 Prendre une photo</h2><video id="cameraVideo" class="cameraView" autoplay muted playsinline></video><p class="cameraHint" id="cameraStatus" role="status">Ouverture de la caméra…</p><div class="field" id="cameraChoice" hidden><label for="cameraDevice">Caméra</label><select id="cameraDevice"></select></div><div class="cameraActions"><button type="button" class="btn" id="captureShot" disabled>● Capturer</button><button type="button" class="btn light" id="closeCamera">Fermer</button></div><button type="button" class="btn full" id="nativeCamera" hidden style="margin-top:10px">Utiliser l’appareil photo du téléphone</button></div></div><dialog class="modal" id="backupDialog" aria-labelledby="backupTitle">
+  <h2 id="backupTitle">Sauvegarde</h2>
+  <h3 style="margin:6px 0 6px">Google Drive</h3>
+  <p id="driveSyncStatus" role="status"></p>
+  <div class="bar" style="margin-top:10px">
+    <button type="button" class="btn" id="driveConnect">Connecter Google Drive</button>
+    <button type="button" class="btn light" id="driveSyncNow" hidden>Synchroniser maintenant</button>
+    <button type="button" class="btn light" id="driveRestore" hidden>Récupérer depuis Drive</button>
+    <button type="button" class="btn light" id="driveDisconnect" hidden>Déconnecter</button>
+  </div>
+  <h3 style="margin:22px 0 6px">Fichier de sauvegarde</h3>
+  <p>Exportez vos missions et photos dans un fichier, ou restaurez un fichier déjà exporté.</p>
+  <div class="bar" style="margin-top:10px">
+    <button type="button" class="btn light" id="downloadBackup">Télécharger la sauvegarde</button>
+    <button type="button" class="btn light" id="restoreBtn">Restaurer une sauvegarde</button>
+  </div>
+  <div class="bar"><button type="button" class="btn light" id="closeBackup">Fermer</button></div>
+  <input type="file" id="restoreInput" accept=".json,application/json" hidden>
+</dialog>
+<dialog class="modal send-modal" id="facadeDialog" aria-labelledby="facadeTitle">
+  <div class="facade-empty" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1Z"/></svg><span>Façade du bien</span></div>
+  <h2 id="facadeTitle">Mission créée</h2>
+  <p class="send-text" id="facadeText"></p>
+  <div class="send-actions">
+    <button type="button" class="btn full" id="facadeNow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h4l2-3h4l2 3h4a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"/><circle cx="12" cy="13" r="3.4"/></svg> Photographier la façade</button>
+    <button type="button" class="btn light full" id="facadePick"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8" r="1.5"/><path d="m4 17 5-5 4 4 3-3 4 4"/></svg> Choisir dans la pellicule</button>
+    <button type="button" class="link-later" id="facadeLater">Plus tard</button>
+  </div>
+</dialog>
+<dialog class="modal send-modal" id="driveDialog" aria-labelledby="driveTitle">
+  <div class="send-icon" id="driveIcon" aria-hidden="true"></div>
+  <h2 id="driveTitle">Envoyer vers Google Drive</h2>
+  <p class="send-text" id="driveText"></p>
+  <div class="send-folder" id="driveFolder" hidden></div>
+  <div class="send-progress" id="driveProgress" hidden><span id="driveBar"></span></div>
+  <div class="send-actions">
+    <button type="button" class="btn full" id="driveMain"></button>
+    <a class="btn full" id="driveOpen" href="https://drive.google.com/" target="_blank" rel="noopener noreferrer" hidden>Ouvrir le dossier dans Drive</a>
+    <button type="button" class="btn light full" id="closeDrive">Fermer</button>
+  </div>
+</dialog><dialog class="modal" id="pdfDialog" aria-labelledby="pdfTitle">
+  <h2 id="pdfTitle">PDF / Imprimer</h2>
+  <p id="pdfStatus" role="status"></p>
+  <div class="bar">
+    <button type="button" class="btn" id="sharePdf" hidden>Partager / Imprimer</button>
+    <button type="button" class="btn light" id="downloadPdf" disabled>Télécharger le PDF</button>
+    <button type="button" class="btn light" id="closePdf">Fermer</button>
+  </div>
+</dialog><div class="toast" id="toast"></div><script src="./jspdf.umd.min.js"></script><script src="./config.js"></script>
+<script>
+const DIAGS=[
+  ['A','Amiante'],['E','Électricité'],['P','Plomb'],['G','Gaz'],['D','DPE'],
+  ['T','Termites'],['U','Audit énergétique'],['V','DTG / 3PT'],['S','Mesurage']
+];const MONTH='JFMAVUISTOND';const $=s=>document.querySelector(s);let db,missions=[],photos=[],selected=[],active=null,activeDiag=null,editId=null,editSelection=[];const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const uid=()=>crypto.randomUUID?crypto.randomUUID():String(Date.now())+Math.random();function toast(s){let t=$('#toast');t.textContent=s;t.style.display='block';setTimeout(()=>t.style.display='none',2500)}function openDB(){return new Promise((res,rej)=>{let r=indexedDB.open('missionphoto-interne-v1',1);r.onupgradeneeded=()=>{let d=r.result;if(!d.objectStoreNames.contains('missions'))d.createObjectStore('missions',{keyPath:'id'});if(!d.objectStoreNames.contains('photos')){let p=d.createObjectStore('photos',{keyPath:'id'});p.createIndex('missionId','missionId')}};r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)})}function req(r){return new Promise((res,rej)=>{r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)})}const store=(n,mode='readonly')=>db.transaction(n,mode).objectStore(n);function write(names,queue){
+  return new Promise((resolve,reject)=>{
+    const transaction=db.transaction(names,'readwrite');
+    transaction.oncomplete=()=>resolve();
+    transaction.onabort=()=>reject(transaction.error||new Error('Transaction annulée.'));
+    try{queue(transaction)}catch(error){transaction.abort();reject(error)}
+  });
+}
+const put=(name,value)=>write(name,transaction=>transaction.objectStore(name).put(value));
+const del=(name,id)=>write(name,transaction=>transaction.objectStore(name).delete(id));
+async function load(){missions=await req(store('missions').getAll());syncCounters(missions);photos=await req(store('photos').getAll());missions.sort((a,b)=>(b.created||'').localeCompare(a.created||''));renderLists();if(active)renderDetail();if(driveWriting)updateDriveUi();else scheduleDriveSync()}
+function diagnosticCode(code){return code==='R'?'V':code}
+function codes(m){return [...new Set((m.codes||'').split('').map(diagnosticCode))]}function diagNames(m){return codes(m).map(c=>DIAGS.find(d=>d[0]===c)?.[1]||c)}function missionThumb(m){
+  return imageType(m.facade)?`<img src="${safe(m.facade)}" alt="" loading="lazy">`:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1Z"/></svg>';
+}
+function card(m){let n=photos.filter(p=>p.missionId===m.id).length;return `<div class="mission-swipe"><button type="button" class="swipe-delete" hidden>Supprimer</button><button type="button" class="missioncard" data-open="${safe(m.id)}" aria-keyshortcuts="ArrowLeft"><span class="thumb">${missionThumb(m)}</span><span class="rowtext"><strong>${safe(m.name||m.address||'Sans adresse')}</strong><small>${safe([m.owner,m.reference].filter(Boolean).join(' · ')||'Sans référence')}${imageType(m.facade)?'':' · <span class="todo">Façade à prendre</span>'}</small><small>${safe(diagNames(m).join(', '))} · ${n} photo${n>1?'s':''}</small></span><span class="chev" aria-hidden="true">›</span></button></div>`}let missionFilter='all';
+function missionMatches(m,q){return !q||([m.name,m.owner,m.reference,m.address,frDate(m.date),...diagNames(m),...photos.filter(p=>p.missionId===m.id).map(p=>p.label+' '+p.location)].join(' ')).toLocaleLowerCase('fr').includes(q)}
+function missionKind(m){const c=codes(m);return {diag:c.some(x=>!['U','V'].includes(x)),exp:c.some(x=>['U','V'].includes(x))}}
+function monthTitle(value){const d=/^\d{4}-\d{2}/.test(value||'')?new Date(value.slice(0,7)+'-01T12:00:00'):null;if(!d)return 'Sans date';const t=d.toLocaleDateString('fr-FR',{month:'long',year:'numeric'});return t.charAt(0).toUpperCase()+t.slice(1)}
+function renderLists(){let q=($('#search').value||'').trim().toLocaleLowerCase('fr');$('#recent').innerHTML=missions.slice(0,3).map(card).join('')||'<div class="empty">Aucune mission pour le moment.<br>Créez votre premier dossier.</div>';
+const list=missions.filter(m=>missionMatches(m,q)&&(missionFilter==='all'||missionKind(m)[missionFilter])).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))||String(b.created||'').localeCompare(String(a.created||'')));
+const groups=[];for(const m of list){const t=monthTitle(m.date);const g=groups.find(x=>x.t===t);if(g)g.items.push(m);else groups.push({t,items:[m]})}
+$('#allMissions').innerHTML=groups.map(g=>`<p class="group-title">${safe(g.t)}</p><div class="group">${g.items.map(card).join('')}</div>`).join('')||'<div class="empty">'+(q?'Aucune mission trouvée.':'Aucune mission dans cette catégorie.')+'</div>';document.querySelectorAll('.mission-swipe').forEach(bindMissionSwipe);
+}
+function setMissionSwipe(row,revealed){
+  row.classList.toggle('revealed',revealed);
+  row.querySelector('.swipe-delete').hidden=!revealed;
+}
+function bindMissionSwipe(row){
+  const card=row.querySelector('[data-open]');
+  const remove=row.querySelector('.swipe-delete');
+  let gesture=null;
+  let suppressClickUntil=0;
+  const reveal=()=>{
+    document.querySelectorAll('.mission-swipe.revealed').forEach(open=>{
+      if(open!==row)setMissionSwipe(open,false);
+    });
+    setMissionSwipe(row,true);
+  };
+
+  card.onpointerdown=event=>{
+    if(!event.isPrimary||event.button!==0||event.pointerType==='mouse')return;
+    suppressClickUntil=0;
+    gesture={id:event.pointerId,x:event.clientX,y:event.clientY};
+  };
+  card.onpointercancel=()=>{gesture=null};
+  card.onpointerup=event=>{
+    if(!gesture||gesture.id!==event.pointerId)return;
+    const dx=event.clientX-gesture.x;
+    const dy=event.clientY-gesture.y;
+    gesture=null;
+    if(Math.abs(dx)<48||Math.abs(dx)<Math.abs(dy)*1.5)return;
+    suppressClickUntil=performance.now()+400;
+    if(dx<0)reveal();
+    else setMissionSwipe(row,false);
+  };
+  card.onkeydown=event=>{
+    if(event.key!=='ArrowLeft')return;
+    event.preventDefault();
+    reveal();
+    remove.focus();
+  };
+  row.onkeydown=event=>{
+    if(event.key!=='Escape'||!row.classList.contains('revealed'))return;
+    setMissionSwipe(row,false);
+    card.focus();
+  };
+  card.onclick=event=>{
+    if(event.detail&&performance.now()<suppressClickUntil)return;
+    if(row.classList.contains('revealed')){
+      setMissionSwipe(row,false);
+      return;
+    }
+    active=card.dataset.open;
+    activeDiag=null;
+    go('detail');
+  };
+  remove.onclick=async()=>{
+    remove.disabled=true;
+    try{
+      if(!await deleteMissionById(card.dataset.open)){
+        setMissionSwipe(row,false);
+        card.focus();
+      }
+    }catch(error){
+      alert('Suppression impossible. '+error.message);
+    }finally{
+      remove.disabled=false;
+    }
+  };
+}
+function go(page){$('#topBack').hidden=page!=='detail';$('#editMission').hidden=page!=='detail';$('#topAdd').hidden=page!=='missions';if(cameraSession)closeCamera(false);$(".bottom").hidden=page==="home";document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===page+'View'));document.querySelectorAll('.bottom button').forEach(b=>b.classList.toggle('active',b.dataset.go===(page==='detail'?'missions':page)));if(page==='detail')renderDetail();if(page==='new'){selected=[];$('#missionForm').reset();$('#missionDate').value=localDate();drawPicker();updateRef()}if(page==='missions'||page==='home')renderLists();window.scrollTo(0,0)}document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));$('#search').oninput=renderLists;
+function openSearch(){go('missions');document.querySelectorAll('.bottom button').forEach(b=>b.classList.toggle('active',b.id==='navSearch'));$('#search').focus()}
+$('#navSearch').onclick=openSearch;$('#homeSearch').onclick=openSearch;
+$('#topBack').onclick=()=>go('missions');$('#topAdd').onclick=()=>go('new');
+document.querySelectorAll('#missionFilter [data-filter]').forEach(b=>b.onclick=()=>{missionFilter=b.dataset.filter;document.querySelectorAll('#missionFilter [data-filter]').forEach(x=>{x.classList.toggle('selected',x===b);x.setAttribute('aria-pressed',String(x===b))});renderLists()});
+{let edge=null;
+document.addEventListener('touchstart',e=>{const t=e.touches[0];edge=(e.touches.length===1&&t.clientX<28&&($('#detailView').classList.contains('active')||$('#newView').classList.contains('active')))?{x:t.clientX,y:t.clientY}:null},{passive:true});
+document.addEventListener('touchend',e=>{if(!edge)return;const t=e.changedTouches[0];const dx=t.clientX-edge.x,dy=Math.abs(t.clientY-edge.y);edge=null;if(dx>80&&dy<60&&!document.querySelector('.overlay.open,dialog[open]'))go($('#detailView').classList.contains('active')?'missions':'home')},{passive:true});}
+const DIAG_ICONS={"A": "<svg viewBox=\"0 0 48 48\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"#1E4D3A\" d=\"M9 45V19A15 15 0 0 1 39 19v26Z\"/><text x=\"24\" y=\"37\" text-anchor=\"middle\" font-family=\"Arial,Helvetica,sans-serif\" font-weight=\"700\" font-size=\"29\" fill=\"#fff\">a</text></svg>", "E": "<svg viewBox=\"0 0 48 48\" aria-hidden=\"true\" focusable=\"false\"><rect fill=\"none\" stroke=\"#1E4D3A\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" x=\"4\" y=\"7\" width=\"30\" height=\"27\" rx=\"3\"/><rect x=\"9\" y=\"17\" width=\"5\" height=\"10\" rx=\"1\" fill=\"#1E4D3A\"/><rect x=\"16.5\" y=\"17\" width=\"5\" height=\"10\" rx=\"1\" fill=\"#1E4D3A\"/><rect x=\"24\" y=\"17\" width=\"5\" height=\"10\" rx=\"1\" fill=\"#1E4D3A\"/><path fill=\"none\" stroke=\"#1E4D3A\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M9 12h20\"/><path fill=\"#fff\" stroke=\"#D9622B\" stroke-width=\"2.6\" stroke-linejoin=\"round\" d=\"M36 23 46 41H26Z\"/><path fill=\"#D9622B\" d=\"m37 28-4 7h3l-1 4 4-7h-3z\"/></svg>", "P": "<svg viewBox=\"0 0 48 48\" aria-hidden=\"true\" focusable=\"false\"><rect fill=\"none\" stroke=\"#1E4D3A\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" x=\"4\" y=\"6\" width=\"28\" height=\"28\" rx=\"3\"/><text x=\"18\" y=\"27\" text-anchor=\"middle\" font-family=\"Arial,Helvetica,sans-serif\" font-weight=\"700\" font-size=\"14\" fill=\"#1E4D3A\">Pb</text><text x=\"8\" y=\"13\" font-family=\"Arial,Helvetica,sans-serif\" font-weight=\"700\" font-size=\"5.5\" fill=\"#1E4D3A\">82</text><path fill=\"#fff\" stroke=\"#D9622B\" stroke-width=\"2.4\" stroke-linejoin=\"round\" d=\"M28 42c1-6 5-9 9-8 2-4 7-4 9 0v8Z\"/></svg>", "G": "<svg viewBox=\"0 0 48 48\" aria-hidden=\"true\" focusable=\"false\"><circle fill=\"none\" stroke=\"#1E4D3A\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" cx=\"24\" cy=\"24\" r=\"18\"/><path fill=\"#D9622B\" d=\"M24 12c1 5 7 7 7 14a7 7 0 0 1-14 0c0-4 2-6 4-8 0 3 1 4 3 5-1-4 0-8 0-11Z\"/></svg>", "D": "<svg viewBox=\"0 0 48 48\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"#1A9850\" d=\"M5 5.5h15.0l2.6 2.4-2.6 2.4H5Z\"/><text x=\"7\" y=\"9.5\" font-family=\"Arial,Helvetica,sans-serif\" font-weight=\"700\" font-size=\"4.2\" fill=\"#fff\">A</text><path fill=\"#66BD63\" d=\"M5 10.9h18.6l2.6 2.4-2.6 2.4H5Z\"/><text x=\"7\" y=\"14.9\" font-family=\"Arial,Helvetica,sans-serif\" font-weight=\"700\" font-size=\"4.2\" fill=\"#fff\">B</text><path fill=\"#A6D96A\" d=\"M5 16.3h22.2l2.6 2.4-2.6 2.4H5Z\"/><text x=\"7\" y=\"20.3\" font-family=\"Arial,Helvetica,sans-serif\" font-weight=\"700\" font-size=\"4.2\" fill=\"#fff\">C</text><path fill=\"#F2D33B\" d=\"M5 21.7h25.8l2.6 2.4-2.6 2.4H5Z\"/><text x=\"7\" y=\"25.7\" font-family=\"Arial,Helvetica,sans-serif\" font-weight=\"700\" font-size=\"4.2\" fill=\"#fff\">D</text><path fill=\"#F4A340\" d=\"M5 27.1h29.4l2.6 2.4-2.6 2.4H5Z\"/><text x=\"7\" y=\"31.1\" font-family=\"Arial,Helvetica,sans-serif\" font-weight=\"700\" font-size=\"4.2\" fill=\"#fff\">E</text><path fill=\"#E8712B\" d=\"M5 32.5h33.0l2.6 2.4-2.6 2.4H5Z\"/><text x=\"7\" y=\"36.5\" font-family=\"Arial,Helvetica,sans-serif\" font-weight=\"700\" font-size=\"4.2\" fill=\"#fff\">F</text><path fill=\"#D73027\" d=\"M5 37.9h36.6l2.6 2.4-2.6 2.4H5Z\"/><text x=\"7\" y=\"41.9\" font-family=\"Arial,Helvetica,sans-serif\" font-weight=\"700\" font-size=\"4.2\" fill=\"#fff\">G</text><path fill=\"#1E4D3A\" d=\"M46 22.5h-7.5l-3 2.7 3 2.7H46Z\"/></svg>", "T": "<svg viewBox=\"0 0 48 48\" aria-hidden=\"true\" focusable=\"false\"><circle fill=\"none\" stroke=\"#1E4D3A\" stroke-width=\"2.4\" cx=\"24\" cy=\"24\" r=\"19\"/><path fill=\"none\" stroke=\"#1E4D3A\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M22.5 13.5c-1.5-3-3.5-4.5-6-5M25.5 13.5c1.5-3 3.5-4.5 6-5M21.8 20.5l-4.3-1.8-2.6-3.6M26.2 20.5l4.3-1.8 2.6-3.6M21.6 23.5h-5.2l-3 2.4M26.4 23.5h5.2l3 2.4M22 27l-3.6 3.4-1 4.2M26 27l3.6 3.4 1 4.2\"/><ellipse cx=\"24\" cy=\"15.5\" rx=\"3.3\" ry=\"3\" fill=\"#D9622B\"/><ellipse cx=\"24\" cy=\"21.8\" rx=\"2.6\" ry=\"2.8\" fill=\"#D9622B\"/><ellipse cx=\"24\" cy=\"31\" rx=\"4.4\" ry=\"7.2\" fill=\"#D9622B\"/><path fill=\"none\" stroke=\"#fff\" stroke-width=\"1\" stroke-linecap=\"round\" d=\"M20.6 29h6.8M20.4 32.2h7.2M21 35.3h6\"/></svg>", "S": "<svg viewBox=\"0 0 48 48\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"none\" stroke=\"#D9622B\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M10 5h32M13 2l-3 3 3 3M39 2l3 3-3 3M5 10v32M2 13l3-3 3 3M2 39l3 3 3-3\"/><rect fill=\"none\" stroke=\"#1E4D3A\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" x=\"10\" y=\"10\" width=\"34\" height=\"32\" rx=\"2\"/><path fill=\"none\" stroke=\"#1E4D3A\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M27 10v10M27 26v16M10 24h11\"/><text x=\"36\" y=\"37\" text-anchor=\"middle\" font-family=\"Arial,Helvetica,sans-serif\" font-weight=\"700\" font-size=\"7\" fill=\"#1E4D3A\">m²</text></svg>", "U": "<svg viewBox=\"0 0 48 48\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"none\" stroke=\"#1E4D3A\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M3 24 18 11l15 13M7 21v18h20V21\"/><path fill=\"#5FA55A\" d=\"M12 34c0-7 5-10 11-10 0 7-4 10-11 10Z\"/><path stroke=\"#fff\" stroke-width=\"1.4\" d=\"M13 33l7-6\"/><circle cx=\"35\" cy=\"31\" r=\"8\" fill=\"#fff\" stroke=\"#D9622B\" stroke-width=\"2.6\"/><path fill=\"none\" stroke=\"#D9622B\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M40.5 36.5 46 42\"/><path stroke=\"#D9622B\" stroke-width=\"2\" d=\"M32 34v-3M35 34v-5M38 34v-2\"/></svg>", "V": "<svg viewBox=\"0 0 48 48\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"none\" stroke=\"#1E4D3A\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M8 43V12l16-7 16 7v31M4 43h40M21 43v-7h6v7\"/><path fill=\"none\" stroke=\"#D9622B\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2.4\" d=\"M15 17h3M22.5 17h3M30 17h3M15 24h3M22.5 24h3M30 24h3M15 31h3M30 31h3\"/></svg>"};
+function drawButtons(el,selection,onToggle){const tile=([c,n])=>`<button type="button" class="diag ${selection.includes(c)?'selected':''}" data-code="${c}" data-diagnostic="${c}" aria-pressed="${selection.includes(c)}">${DIAG_ICONS[c]||''}<span class="diag-label">${safe(n)}</span></button>`;el.innerHTML='<p class="diag-group">Diagnostics</p><div class="diag-grid">'+DIAGS.filter(d=>!['U','V'].includes(d[0])).map(tile).join('')+'</div><p class="diag-group">Expertise</p><div class="diag-grid">'+DIAGS.filter(d=>['U','V'].includes(d[0])).map(tile).join('')+'</div>';el.querySelectorAll('[data-code]').forEach(b=>b.onclick=()=>onToggle(b.dataset.code))}function drawPicker(){drawButtons($('#diagnosticPicker'),selected,c=>{selected=selected.includes(c)?selected.filter(x=>x!==c):[...selected,c];drawPicker();updateRef()})}function monthRef(date){let [y,m]=date.split('-');return MONTH[Number(m)-1]+y.slice(-2)}const COUNTERS_KEY='sitereport-ref-counters';
+function refCounters(){try{const c=JSON.parse(localStorage.getItem(COUNTERS_KEY)||'{}');return c&&typeof c==='object'?c:{}}catch{return {}}}
+function keepCounter(prefix,value){const c=refCounters();if(!(Number(value)<=Number(c[prefix]||0))){c[prefix]=Number(value);try{localStorage.setItem(COUNTERS_KEY,JSON.stringify(c))}catch{}}}
+function mergeCounters(extra){for(const [prefix,value] of Object.entries(extra||{}))if(Number.isFinite(Number(value)))keepCounter(prefix,Number(value))}
+function syncCounters(list=missions){for(const m of list){const parts=String(m.reference||'').split('-');const n=Number(parts.pop());if(parts.length&&Number.isFinite(n))keepCounter(parts[0],n)}}
+function reference(date,cs,list=missions){if(!date||!cs.length)return 'Choisissez une date et au moins un diagnostic';let prefix=monthRef(date),existing=list.filter(m=>m.reference?.startsWith(prefix+'-'));let nums=existing.map(m=>Number(m.reference.split('-').pop())).filter(Number.isFinite);let next=Math.max(0,Number(refCounters()[prefix])||0,...nums)+1;return `${prefix}-${DIAGS.filter(d=>cs.includes(d[0])).map(d=>d[0]).join('')}-${String(next).padStart(3,'0')}`}function frDate(value){const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(value||'');return m?m[3]+'/'+m[2]+'/'+m[1]:(value||'')}
+function localDate(){
+  const now=new Date();
+  return [now.getFullYear(),now.getMonth()+1,now.getDate()].map(n=>String(n).padStart(2,'0')).join('-');
+}
+function updateRef(){$('#refPreview').textContent=reference($('#missionDate').value,selected)}$('#missionDate').onchange=updateRef;$('#missionForm').onsubmit=async e=>{e.preventDefault();if(!selected.length){toast('Sélectionnez au moins un diagnostic');return}if(!$('#address').value.trim()){toast('Saisissez l’adresse du bien');return}let date=$('#missionDate').value;let m={id:uid(),name:$('#address').value.trim(),owner:$('#owner').value.trim(),address:$('#unit').value.trim(),date,codes:DIAGS.filter(d=>selected.includes(d[0])).map(d=>d[0]).join(''),reference:reference(date,selected),created:new Date().toISOString()};const submit=e.submitter||$('#missionForm button[type=submit]');
+submit.disabled=true;
+try{
+  await write('missions',transaction=>{
+    const missionsStore=transaction.objectStore('missions');
+    const request=missionsStore.getAll();
+    request.onsuccess=()=>{
+      m.reference=reference(m.date,codes(m),request.result);
+      missionsStore.add(m);
+    };
+  });
+  syncCounters([m]);
+  active=m.id;
+  activeDiag=null;
+  await load();
+  go('detail');
+  $('#facadeText').innerHTML=safe(m.name)+' · '+safe(m.reference)+'<br>Commencez par la façade du bien.';
+  $('#facadeDialog').showModal();
+}finally{submit.disabled=false}};
+function getMission(){return missions.find(m=>m.id===active)}function getDiag(p){return diagnosticCode(p.diag)||codes(missions.find(m=>m.id===p.missionId)||{})[0]||'A'}function imageType(data){
+  return /^data:image\/([a-z0-9.+-]+);base64,[a-z0-9+/]+=*$/i.exec(data||'')?.[1]?.toLowerCase();
+}
+function photoExtension(photo){
+  const type=imageType(photo.data);
+  return ({jpeg:'jpg','svg+xml':'svg','x-icon':'ico','vnd.microsoft.icon':'ico','x-ms-bmp':'bmp'})[type]
+    ||type?.replace(/[^a-z0-9]/g,'')||'img';
+}
+function photoStem(label){
+  return (label||'Photo').normalize('NFC').replace(/[\\/:*?"<>|\x00-\x1f]/g,'-').trim().slice(0,100)||'Photo';
+}
+function compactName(value){
+  return String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'')||'photo';
+}
+function fileName(photo){
+  const mission=missions.find(m=>m.id===photo.missionId);
+  const stem=photoStem(photo.label);
+  const group=photos.filter(item=>item.id!==photo.id&&item.missionId===photo.missionId&&
+    photoStem(item.label).toLocaleLowerCase('fr')===stem.toLocaleLowerCase('fr'));
+  group.push(photo);
+  group.sort((a,b)=>String(a.created||'').localeCompare(String(b.created||''))||a.id.localeCompare(b.id));
+  const expertise=['U','V'].includes(getDiag(photo))?'exp-':'';
+  return compactName(stem)+(group.indexOf(photo)+1)+'-'+expertise+compactName(mission?.reference||'mission')+'.'+photoExtension(photo);
+}
+function renderDetail(){let m=getMission();if(!m)return;let cs=codes(m);for(const p of photos.filter(p=>p.missionId===m.id)){if(!cs.includes(getDiag(p)))cs.push(getDiag(p))}if(!cs.includes(activeDiag))activeDiag=cs[0];const canAdd=codes(m).includes(activeDiag);$('#takePhoto').disabled=!canAdd;$('#addPhoto').disabled=!canAdd;$('#detailAddress').textContent=m.name;$('#detailOwner').textContent=[m.owner,frDate(m.date)].filter(Boolean).join(' · ');$('#facadeBox').innerHTML=imageType(m.facade)?`<button type="button" class="facade-photo" id="facadeEdit" aria-label="Changer la photo de façade"><img src="${safe(m.facade)}" alt="Façade du bien"><span class="facade-tag">Façade</span><span class="facade-change">Changer</span></button>`:`<button type="button" class="facade-add" id="facadeEdit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1Z"/></svg>Prendre la photo de façade</button>`;$('#facadeEdit').onclick=()=>openFacadeSheet(m.id);$('#detailRef').textContent=m.reference;$('#detailUnit').textContent=m.address||'';$('#detailUnitRow').hidden=!m.address;$('#diagTabs').innerHTML=cs.map(c=>`<button class="tab ${c===activeDiag?'selected':''}" data-tab="${safe(c)}" data-diagnostic="${safe(c)}" aria-pressed="${c===activeDiag}">${safe(DIAGS.find(d=>d[0]===c)?.[1]||c)} · ${photos.filter(p=>p.missionId===m.id&&getDiag(p)===c).length}</button>`).join('');document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{activeDiag=b.dataset.tab;renderDetail()});let ps=photos.filter(p=>p.missionId===m.id&&getDiag(p)===activeDiag).sort((a,b)=>String(a.created||'').localeCompare(String(b.created||'')));$('#photoCount').textContent=photos.filter(p=>p.missionId===m.id).length;$('#photoGrid').innerHTML=ps.map(p=>`<button class="photocard" data-photo="${safe(p.id)}"><img src="${imageType(p.data)?safe(p.data):''}" alt="${safe(p.label||'Photo')}" loading="lazy"><div class="info"><strong>${safe(fileName(p))}</strong><small>${safe(p.location||'Appuyer pour modifier')}</small></div></button>`).join('')||'<div class="empty">Aucune photo dans ce diagnostic.<br>Prenez une photo ou importez une image.</div>';document.querySelectorAll('[data-photo]').forEach(b=>b.onclick=()=>openPhoto(b.dataset.photo))}let cameraSession=null;
+let importTarget=null;
+const cameraVideo=$('#cameraVideo');
+const cameraOverlay=$('#cameraOverlay');
+const cameraStatus=$('#cameraStatus');
+const cameraDevice=$('#cameraDevice');
+const shutter=$('#captureShot');
+
+function stopStream(stream){
+  stream?.getTracks().forEach(track=>track.stop());
+}
+function detachStream(session){
+  shutter.disabled=true;
+  cameraVideo.pause();
+  cameraVideo.srcObject=null;
+  stopStream(session.stream);
+  session.stream=null;
+}
+function closeCamera(restoreFocus=true){
+  const session=cameraSession;
+  if(!session)return;
+  cameraSession=null;
+  detachStream(session);
+  cameraOverlay.classList.remove('open');
+  document.querySelector('.shell').inert=false;
+  document.querySelector('.bottom').inert=false;
+  if(restoreFocus)$('#takePhoto').focus();
+}
+function cameraError(error){
+  switch(error.name){
+    case 'NotAllowedError':
+      return 'Accès refusé. Autorisez la caméra pour cette adresse dans Firefox ou Safari, puis vérifiez les autorisations caméra de Windows ou d’iOS.';
+    case 'NotFoundError':
+      return 'Aucune caméra disponible. Vérifiez qu’une caméra est connectée et activée.';
+    case 'NotReadableError':
+    case 'AbortError':
+      return 'Caméra indisponible. Fermez les autres applications qui utilisent la caméra, puis réessayez.';
+    default:
+      return 'Impossible d’afficher le viseur. Fermez-le et réessayez.';
+  }
+}
+async function startCamera(session,deviceId){
+  const request=++session.request;
+  const current=()=>cameraSession===session&&session.request===request;
+  detachStream(session);
+  cameraDevice.disabled=true;
+  cameraStatus.textContent='Autorisez l’accès à la caméra si le navigateur le demande.';
+  const video={width:{ideal:1920},height:{ideal:1080}};
+  if(deviceId)video.deviceId={exact:deviceId};
+  else video.facingMode={ideal:'environment'};
+  try{
+    const stream=await navigator.mediaDevices.getUserMedia({audio:false,video});
+    if(!current()){
+      stopStream(stream);
+      return;
+    }
+    session.stream=stream;
+    const track=stream.getVideoTracks()[0];
+    track.addEventListener('ended',()=>{
+      if(!current())return;
+      detachStream(session);
+      cameraStatus.textContent='Flux interrompu. Changez de caméra ou fermez le viseur pour réessayer.';
+    });
+    cameraVideo.srcObject=stream;
+    await cameraVideo.play();
+    if(!current()||session.stream!==stream)return;
+    updateShutter();
+    cameraStatus.textContent='Cadrez la photo, puis appuyez sur Capturer.';
+    const devices=await navigator.mediaDevices.enumerateDevices().catch(()=>[]);
+    if(!current())return;
+    const cameras=devices.filter(device=>device.kind==='videoinput'&&device.deviceId);
+    const selectedDevice=track.getSettings?.().deviceId||deviceId;
+    cameraDevice.replaceChildren(...cameras.map((device,index)=>new Option(
+      device.label||'Caméra '+(index+1),device.deviceId
+    )));
+    if(cameras.some(device=>device.deviceId===selectedDevice))cameraDevice.value=selectedDevice;
+    else if(cameras.length>1)cameraDevice.prepend(new Option('Caméra active','',true,true));
+    $('#cameraChoice').hidden=cameras.length<2;
+  }catch(error){
+    if(!current())return;
+    detachStream(session);
+    cameraStatus.textContent=cameraError(error);
+    $('#nativeCamera').hidden=false;
+  }finally{
+    if(current())cameraDevice.disabled=false;
+  }
+}
+function updateShutter(){
+  shutter.disabled=!cameraSession?.stream||cameraSession.saving||
+    cameraVideo.readyState<2||!cameraVideo.videoWidth||!cameraVideo.videoHeight;
+}
+cameraVideo.addEventListener('loadeddata',updateShutter);
+cameraVideo.addEventListener('playing',updateShutter);
+cameraDevice.onchange=()=>{if(cameraSession)startCamera(cameraSession,cameraDevice.value)};
+const preferNativeCamera=matchMedia('(pointer:coarse)').matches;
+function openNativeCamera(target){
+  importTarget=target;
+  $('#cameraInput').click();
+}
+$('#nativeCamera').onclick=()=>{
+  const target=cameraSession&&{missionId:cameraSession.missionId,diag:cameraSession.diag,facade:cameraSession.facade};
+  closeCamera(false);
+  if(target)openNativeCamera(target);
+};
+$('#takePhoto').onclick=()=>{
+  if(cameraSession||!codes(getMission()||{}).includes(activeDiag))return;
+  openCameraFor({missionId:active,diag:activeDiag});
+};
+function openCameraFor(target){
+  if(cameraSession)return;
+  if(preferNativeCamera){openNativeCamera(target);return}
+  $('#nativeCamera').hidden=true;
+  const session={...target,request:0,stream:null,saving:false};
+  cameraSession=session;
+  $('#cameraChoice').hidden=true;
+  cameraOverlay.classList.add('open');
+  document.querySelector('.shell').inert=true;
+  document.querySelector('.bottom').inert=true;
+  $('#closeCamera').focus();
+  if(!window.isSecureContext||!navigator.mediaDevices?.getUserMedia){
+    cameraStatus.textContent='Ouvrez SiteReport via le lanceur Windows (localhost) ou via une adresse HTTPS dans Safari sur iPhone.';
+    $('#nativeCamera').hidden=false;
+    return;
+  }
+  startCamera(session);
+};
+$('#closeCamera').onclick=()=>closeCamera();
+document.addEventListener('keydown',event=>{
+  if(event.key==='Escape'&&cameraSession){
+    event.preventDefault();
+    closeCamera();
+  }
+});
+window.addEventListener('pagehide',()=>closeCamera(false));
+document.addEventListener('visibilitychange',()=>{
+  if(document.hidden)closeCamera(false);
+});
+async function saveFacade(missionId,data){
+  if(!imageType(data))throw new Error('Image illisible.');
+  await patchRecord('missions',missionId,{facade:data,facadeUpdated:new Date().toISOString()});
+  await load();
+  toast('Façade enregistrée');
+}
+function newPhoto(target,data){
+  return {id:uid(),missionId:target.missionId,diag:target.diag,label:'',location:'',
+    observation:'',created:new Date().toISOString(),data};
+}
+shutter.onclick=async()=>{
+  const session=cameraSession;
+  updateShutter();
+  if(!session||shutter.disabled)return;
+  session.saving=true;
+  updateShutter();
+  cameraDevice.disabled=true;
+  try{
+    const canvas=document.createElement('canvas');
+    const scale=Math.min(1,2000/Math.max(cameraVideo.videoWidth,cameraVideo.videoHeight));
+    canvas.width=Math.round(cameraVideo.videoWidth*scale);
+    canvas.height=Math.round(cameraVideo.videoHeight*scale);
+    canvas.getContext('2d').drawImage(cameraVideo,0,0,canvas.width,canvas.height);
+    if(session.facade){
+      await saveFacade(session.missionId,canvas.toDataURL('image/jpeg',0.86));
+      if(cameraSession===session)closeCamera(false);
+      return;
+    }
+    const photo=newPhoto(session,canvas.toDataURL('image/jpeg',0.86));
+    await savePhotos([photo]);
+    if(cameraSession===session){
+      closeCamera(false);
+      openPhoto(photo.id);
+    }
+  }catch(error){
+    if(cameraSession===session){
+      cameraStatus.textContent='Enregistrement impossible. '+error.message;
+      session.saving=false;
+      cameraDevice.disabled=false;
+      updateShutter();
+    }else toast('Enregistrement impossible');
+  }
+};
+function savePhotos(items){
+  return write(['missions','photos'],transaction=>{
+    const target=items[0];
+    const mission=transaction.objectStore('missions').get(target.missionId);
+    mission.onsuccess=()=>{
+      if(!mission.result||!codes(mission.result).includes(target.diag)){
+        transaction.abort();
+        return;
+      }
+      const photoStore=transaction.objectStore('photos');
+      for(const photo of items)photoStore.add(photo);
+    };
+  }).then(load);
+}
+async function photoData(file){
+  try{
+    const url=URL.createObjectURL(file);
+    try{
+      const image=await loadPdfImage(url);
+      const scale=Math.min(1,2000/Math.max(image.naturalWidth,image.naturalHeight));
+      if(scale===1&&file.type==='image/jpeg')return await dataURL(file);
+      const canvas=document.createElement('canvas');
+      canvas.width=Math.max(1,Math.round(image.naturalWidth*scale));
+      canvas.height=Math.max(1,Math.round(image.naturalHeight*scale));
+      const context=canvas.getContext('2d');
+      context.fillStyle='#ffffff';context.fillRect(0,0,canvas.width,canvas.height);
+      context.drawImage(image,0,0,canvas.width,canvas.height);
+      return canvas.toDataURL('image/jpeg',0.86);
+    }finally{URL.revokeObjectURL(url)}
+  }catch{return dataURL(file)}
+}
+function dataURL(file){
+  return new Promise((resolve,reject)=>{
+    const reader=new FileReader();
+    reader.onload=()=>resolve(reader.result);
+    reader.onerror=()=>reject(reader.error);
+    reader.readAsDataURL(file);
+  });
+}
+$('#addPhoto').onclick=()=>{
+  if(!codes(getMission()||{}).includes(activeDiag))return;
+  importTarget={missionId:active,diag:activeDiag};
+  $('#fileInput').click();
+};
+$('#fileInput').onchange=async event=>{
+  const target=importTarget;
+  importTarget=null;
+  const files=Array.from(event.target.files);
+  event.target.value='';
+  if(!target||!files.length)return;
+  const images=files.filter(file=>/^image\/[a-z0-9.+-]+$/i.test(file.type));
+  if(!images.length){
+    toast('Sélectionnez des fichiers image.');
+    return;
+  }
+  try{
+    if(target.facade){await saveFacade(target.missionId,await photoData(images[0]));return}
+    const items=[];
+    for(const file of images)items.push(newPhoto(target,await photoData(file)));
+    await savePhotos(items);
+    if(active===target.missionId&&activeDiag===target.diag&&$('#detailView').classList.contains('active')){
+      openPhoto(items[0].id);
+    }
+    toast(items.length+' photo(s) importée(s)'+(images.length<files.length?' · fichiers ignorés':''));
+  }catch(error){
+    alert('Import impossible. '+error.message);
+  }
+};
+const QUICK_NAMES={
+  A:['Dalle de sol','Conduit','Plaque fibro','Toiture','Colle'],
+  E:['Tableau','Disjoncteur','Prise','Terre','Compteur électrique'],
+  P:['Peinture','Fenêtre','Porte','Garde-corps'],
+  G:['Chaudière','Compteur gaz','Robinet','Flexible','Ventilation'],
+  D:['Chaudière','Ballon','Fenêtre','VMC','Radiateur','Isolation'],
+  T:['Charpente','Plinthe','Parquet','Dégât'],
+  U:['Chaudière','Fenêtre','Isolation','VMC','Toiture','Pompe à chaleur'],
+  V:['Façade','Toiture','Cage d’escalier','Parties communes','Fissure'],
+  S:['Pièce','Plan']
+};
+function drawNameChips(photo){
+  const diag=getDiag(photo);
+  const used=[];
+  for(const item of photos.filter(p=>p.missionId===photo.missionId&&p.id!==photo.id&&p.label)
+    .sort((a,b)=>String(b.created).localeCompare(String(a.created)))){
+    if(!used.some(n=>n.toLocaleLowerCase('fr')===item.label.toLocaleLowerCase('fr')))used.push(item.label);
+  }
+  const recent=used.slice(0,4);
+  const base=(QUICK_NAMES[diag]||[]).filter(n=>!recent.some(r=>r.toLocaleLowerCase('fr')===n.toLocaleLowerCase('fr')));
+  const chips=[...recent.map(n=>[n,true]),...base.map(n=>[n,false])];
+  $('#nameChips').innerHTML=chips.map(([n,r])=>`<button type="button" class="chip${r?' recent':''}" data-name="${safe(n)}">${safe(n)}</button>`).join('');
+  $('#nameChips').hidden=!chips.length;
+  $('#nameChips').querySelectorAll('[data-name]').forEach(b=>b.onclick=()=>{
+    $('#photoLabel').value=b.dataset.name;
+    $('#photoLabel').oninput();
+  });
+}
+function openPhoto(id){editId=id;let p=photos.find(x=>x.id===id);if(!p)return;drawNameChips(p);$('#photoPreview').src=imageType(p.data)?p.data:'';$('#photoLabel').value=p.label||'';$('#photoLocation').value=p.location||'';$('#photoNote').value=p.observation||'';$('#filePreview').textContent=fileName(p);$('#editorOverlay').classList.add('open');setTimeout(()=>$('#photoLabel').focus(),50)}$('#photoLabel').oninput=()=>{const photo=photos.find(p=>p.id===editId);if(photo)$('#filePreview').textContent=fileName({...photo,label:$('#photoLabel').value.trim()})};function closeEditor(){$('#editorOverlay').classList.remove('open')}$('#closeEditor').onclick=closeEditor;$('#photoForm').onsubmit=async e=>{e.preventDefault();let stored=photos.find(x=>x.id===editId);if(!stored)return;let p={...stored};p.label=$('#photoLabel').value.trim();p.location=$('#photoLocation').value.trim();p.observation=$('#photoNote').value.trim();await put('photos',p);closeEditor();await load();toast('Photo enregistrée')};$('#saveNext').onclick=async()=>{
+  if(!db){toast('Stockage local indisponible');return}
+  if(!$('#photoForm').reportValidity())return;
+  const stored=photos.find(x=>x.id===editId);
+  if(!stored)return;
+  const target={missionId:stored.missionId,diag:getDiag(stored)};
+  const p={...stored,label:$('#photoLabel').value.trim(),location:$('#photoLocation').value.trim(),observation:$('#photoNote').value.trim()};
+  if(preferNativeCamera)openNativeCamera(target);
+  try{
+    await put('photos',p);
+    if(editId===stored.id)closeEditor();
+    active=target.missionId;activeDiag=target.diag;
+    await load();
+    toast('Photo enregistrée');
+    if(!preferNativeCamera&&$('#detailView').classList.contains('active'))$('#takePhoto').onclick();
+  }catch(error){alert('Opération impossible. '+error.message)}
+};
+$('#removePhoto').onclick=async()=>{if(!confirm('Supprimer définitivement cette photo ?'))return;addDriveTrash([photos.find(p=>p.id===editId)?.driveFileId]);await del('photos',editId);closeEditor();await load()};$('#editMission').onclick=()=>{const m=getMission();if(!m)return;editSelection=codes(m);$('#editAddress').value=m.name||'';$('#editOwner').value=m.owner||'';$('#editUnit').value=m.address||'';$('#editDate').value=m.date||localDate();drawEdit();$('#diagOverlay').classList.add('open');setTimeout(()=>$('#editAddress').focus(),50)};function drawEdit(){drawButtons($('#editPicker'),editSelection,c=>{editSelection=editSelection.includes(c)?editSelection.filter(x=>x!==c):[...editSelection,c];drawEdit()})}$('#closeDiagnostics').onclick=()=>$('#diagOverlay').classList.remove('open');$('#saveDiagnostics').onclick=async()=>{if(!$('#editAddress').value.trim()){toast('Saisissez l’adresse du bien');$('#editAddress').focus();return}if(!$('#editDate').value){toast('Choisissez une date');return}if(!editSelection.length){toast('Gardez au moins un diagnostic');return}let m={...getMission()};m.name=$('#editAddress').value.trim();m.owner=$('#editOwner').value.trim();m.address=$('#editUnit').value.trim();m.date=$('#editDate').value;m.codes=DIAGS.filter(d=>editSelection.includes(d[0])).map(d=>d[0]).join('');m.updated=new Date().toISOString();await put('missions',m);$('#diagOverlay').classList.remove('open');await load();scheduleDriveSync();toast('Mission modifiée')};async function deleteMissionById(missionId){
+  const mission=missions.find(item=>item.id===missionId);
+  if(!mission)return false;
+  const name=mission.name||mission.reference||'Sans adresse';
+  if(!confirm('Supprimer définitivement « '+name+' » et toutes ses photos ?'))return false;
+  addDriveTrash([mission.driveFolderId]);
+  await write(['missions','photos'],transaction=>{
+    transaction.objectStore('missions').delete(missionId);
+    const request=transaction.objectStore('photos').index('missionId').openCursor(missionId);
+    request.onsuccess=()=>{
+      const cursor=request.result;
+      if(cursor){cursor.delete();cursor.continue()}
+    };
+  });
+  if(active===missionId)active=null;
+  await load();
+  toast('Mission supprimée');
+  return true;
+}
+$('#deleteMission').onclick=async()=>{
+  const button=$('#deleteMission');
+  button.disabled=true;
+  try{
+    if(await deleteMissionById(active))go('missions');
+  }finally{
+    button.disabled=false;
+  }
+};
+let claudeDownloads=null;
+if(window.claude&&typeof window.claude.use==='function'){
+  window.claude.use('downloads').then(ns=>{claudeDownloads=ns}).catch(()=>{});
+}
+async function download(blob,name){
+  if(claudeDownloads){
+    try{await claudeDownloads.save({filename:name,data:blob});return true}
+    catch(error){
+      if(error?.code==='declined')return false;
+      if(error?.code==='rate_limited'){toast('Un téléchargement est déjà en attente');return false}
+      toast('Téléchargement impossible ici');return false;
+    }
+  }
+  let url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),15000);return true;
+}function slug(s){return String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-zA-Z0-9_-]+/g,'_').slice(0,90)}const backupDialog=$('#backupDialog');
+$('#backupBtn').onclick=()=>backupDialog.showModal();
+$('#closeBackup').onclick=()=>backupDialog.close();
+$('#downloadBackup').onclick=()=>download(new Blob([JSON.stringify({version:4,missions,photos,counters:refCounters()})],{type:'application/json'}),'SiteReport_sauvegarde_'+new Date().toISOString().slice(0,10)+'.json');$('#restoreBtn').onclick=()=>$('#restoreInput').click();$('#restoreInput').onchange=async e=>{try{const file=e.target.files[0];if(!file)return;let d=JSON.parse(await file.text());if(!Array.isArray(d.missions)||!Array.isArray(d.photos))throw Error('Format invalide');if(!confirm('Importer les données de la sauvegarde ?'))return;if(d.missions.some(m=>!m||typeof m.id!=='string'||typeof m.codes!=='string')||
+   d.photos.some(p=>!p||typeof p.id!=='string'||typeof p.missionId!=='string'||!imageType(p.data))){
+  throw new Error('La sauvegarde contient des données invalides.');
+}
+await write(['missions','photos'],transaction=>{
+  for(const mission of d.missions)transaction.objectStore('missions').put(mission);
+  for(const photo of d.photos)transaction.objectStore('photos').put(photo);
+});mergeCounters(d.counters);await load();backupDialog.close();toast('Sauvegarde restaurée')}catch(err){alert('Import impossible : '+err.message)}finally{e.target.value=''}};
+// Export ZIP standard sans bibliothèque externe.
+let crcTable=Array.from({length:256},(_,n)=>{for(let i=0;i<8;i++)n=n&1?0xedb88320^(n>>>1):n>>>1;return n>>>0});function crc(bytes){let c=0xffffffff;for(let b of bytes)c=crcTable[(c^b)&255]^(c>>>8);return(c^0xffffffff)>>>0}function zipFiles(files){let enc=new TextEncoder(),chunks=[],central=[],offset=0;const u16=(d,o,v)=>d.setUint16(o,v,true),u32=(d,o,v)=>d.setUint32(o,v>>>0,true);for(let f of files){let name=enc.encode(f.name),data=f.data,c=crc(data),local=new Uint8Array(30+name.length),v=new DataView(local.buffer);u32(v,0,0x04034b50);u16(v,4,20);u16(v,6,0x800);u32(v,14,c);u32(v,18,data.length);u32(v,22,data.length);u16(v,26,name.length);local.set(name,30);chunks.push(local,data);let cent=new Uint8Array(46+name.length),cv=new DataView(cent.buffer);u32(cv,0,0x02014b50);u16(cv,4,20);u16(cv,6,20);u16(cv,8,0x800);u32(cv,16,c);u32(cv,20,data.length);u32(cv,24,data.length);u16(cv,28,name.length);u32(cv,42,offset);cent.set(name,46);central.push(cent);offset+=local.length+data.length}let csize=central.reduce((s,x)=>s+x.length,0),end=new Uint8Array(22),ev=new DataView(end.buffer);u32(ev,0,0x06054b50);u16(ev,8,files.length);u16(ev,10,files.length);u32(ev,12,csize);u32(ev,16,offset);return new Blob([...chunks,...central,end],{type:'application/zip'})}function diagnosticName(code){
+  return DIAGS.find(diag=>diag[0]===code)?.[1]||code||'Photos';
+}
+function exportPathPart(value){
+  return photoStem(value).replace(/[. ]+$/,'')||'Mission';
+}
+function missionReport(mission,entries){
+  const diagnostics=codes(mission).map(diagnosticName).join(', ');
+  const cells=entries.map(({photo,path,diagnostic})=>{
+    const link='../'+path.split('/').map(encodeURIComponent).join('/');
+    return '<tr><td>'+safe(diagnostic)+'</td><td><a href="'+safe(link)+'">'+safe(path.split('/').pop())+
+      '</a></td><td>'+safe(photo.location)+'</td><td>'+safe(photo.observation)+'</td></tr>';
+  }).join('');
+  return '<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'+
+    '<title>'+safe(mission.reference)+' · Fiche de mission</title>'+
+    '<style>body{font:1rem system-ui;margin:2rem;background:#f3e9dd;color:#422c2a}h1{color:#8d4655}'+
+    'table{border-collapse:collapse;width:100%}td,th{padding:.6rem;border-bottom:1px solid #e9d8ce;text-align:left;white-space:pre-wrap}'+
+    'th{background:#f5d4c7}a{color:#8d4655}.table{overflow:auto}</style>'+
+    '<h1>'+safe(mission.reference)+' · '+safe(mission.name)+'</h1>'+
+    '<dl><dt>Date</dt><dd>'+safe(frDate(mission.date))+'</dd><dt>Propriétaire / contact</dt><dd>'+safe(mission.owner)+
+    '</dd><dt>Complément</dt><dd>'+safe(mission.address)+'</dd><dt>Diagnostics</dt><dd>'+safe(diagnostics)+'</dd></dl>'+
+    '<h2>Photos et observations</h2><div class="table"><table><thead><tr><th>Diagnostic</th><th>Photo</th>'+
+    '<th>Localisation</th><th>Observation</th></tr></thead><tbody>'+cells+'</tbody></table></div></html>';
+}
+function buildMissionArchive(mission){
+  const missionPhotos=photos.filter(photo=>photo.missionId===mission.id);
+  const encoder=new TextEncoder();
+  const folder=missionFolderName(mission);
+  const files=[];
+  const rows=['diagnostic;fichier;localisation;observation'];
+  const entries=[];
+  for(const photo of missionPhotos){
+    if(!imageType(photo.data))throw new Error('Une photo de la mission est illisible.');
+    const diagnostic=diagnosticName(getDiag(photo));
+    const path=exportPathPart(diagnostic)+'/'+fileName(photo);
+    const bytes=Uint8Array.from(atob(photo.data.split(',')[1]),character=>character.charCodeAt(0));
+    files.push({name:folder+'/'+path,data:bytes});
+    entries.push({photo,path,diagnostic});
+    rows.push([diagnostic,path,photo.location,photo.observation].map(value=>
+      '"'+String(value||'').replaceAll('"','""')+'"'
+    ).join(';'));
+  }
+  if(imageType(mission.facade)){
+    const ext=({jpeg:'jpg'})[imageType(mission.facade)]||imageType(mission.facade);
+    files.unshift({name:folder+'/Façade/facade-'+compactName(mission.reference)+'.'+ext,data:Uint8Array.from(atob(mission.facade.split(',')[1]),c=>c.charCodeAt(0))});
+  }
+  const {facade:_facade,...missionInfo}=mission;
+  const metadata={...missionInfo,photos:entries.map(({photo,path})=>{
+    const {data,...details}=photo;
+    return {...details,fichier:path};
+  })};
+  files.push(
+    {name:folder+'/_infos/Fiche de mission.html',data:encoder.encode(missionReport(mission,entries))},
+    {name:folder+'/_infos/observations.csv',data:encoder.encode('\ufeff'+rows.join('\r\n'))},
+    {name:folder+'/_infos/mission.json',data:encoder.encode(JSON.stringify(metadata,null,2))}
+  );
+  return {name:folder+'.zip',blob:zipFiles(files)};
+}
+$('#exportMission').onclick=async()=>{
+  const archive=buildMissionArchive(getMission());
+  if(await download(archive.blob,archive.name))toast('Dossier téléchargé');
+};
+
+$('#cameraInput').onchange=event=>$('#fileInput').onchange(event);
+function loadPdfImage(data){
+  return new Promise((resolve,reject)=>{
+    const image=new Image();
+    image.onload=()=>resolve(image);
+    image.onerror=()=>reject(new Error('Image illisible.'));
+    image.src=data;
+  });
+}
+
+async function buildMissionPdf(mission,diagnostic,items){
+  const {jsPDF}=window.jspdf;
+  const pdf=new jsPDF({compress:true});
+  const pageWidth=pdf.internal.pageSize.getWidth();
+  const pageHeight=pdf.internal.pageSize.getHeight();
+  const margin=15;
+  const width=pageWidth-2*margin;
+  let y=margin;
+  let skipped=0;
+
+  function reserve(height){
+    if(y+height<=pageHeight-margin)return;
+    pdf.addPage();
+    y=margin;
+  }
+  function text(value,size=11,bold=false){
+    pdf.setFont('helvetica',bold?'bold':'normal');
+    pdf.setFontSize(size);
+    const lineHeight=size*0.48;
+    for(const line of pdf.splitTextToSize(String(value),width)){
+      reserve(lineHeight);
+      pdf.text(line,margin,y+lineHeight*0.7);
+      y+=lineHeight;
+    }
+    y+=2;
+  }
+
+  text('Fiche de mission',20,true);
+  text([mission.reference,mission.name].filter(Boolean).join(' - '),15,true);
+  for(const [label,value] of [['Date',frDate(mission.date)],['Contact',mission.owner],['Complément',mission.address]]){
+    if(value)text(label+' : '+value);
+  }
+  text('Diagnostics : '+diagNames(mission).join(', '));
+  text('Photos - '+diagnosticName(diagnostic),14,true);
+  if(!items.length)text('Aucune photo pour ce diagnostic.');
+  for(const photo of items){
+    reserve(30);
+    text(fileName(photo),11,true);
+    if(photo.location)text('Localisation : '+photo.location);
+    if(photo.observation)text('Observation : '+photo.observation);
+    try{
+      if(!imageType(photo.data))throw new Error('Image illisible.');
+      const image=await loadPdfImage(photo.data);
+      const canvas=document.createElement('canvas');
+      const scale=Math.min(1,1200/Math.max(image.naturalWidth,image.naturalHeight));
+      canvas.width=Math.max(1,Math.round(image.naturalWidth*scale));
+      canvas.height=Math.max(1,Math.round(image.naturalHeight*scale));
+      const context=canvas.getContext('2d');
+      context.fillStyle='#ffffff';
+      context.fillRect(0,0,canvas.width,canvas.height);
+      context.drawImage(image,0,0,canvas.width,canvas.height);
+      const pdfScale=Math.min(width/canvas.width,115/canvas.height);
+      const imageWidth=canvas.width*pdfScale;
+      const imageHeight=canvas.height*pdfScale;
+      reserve(imageHeight+5);
+      pdf.addImage(canvas.toDataURL('image/jpeg',0.8),'JPEG',margin,y,imageWidth,imageHeight);
+      y+=imageHeight+5;
+      canvas.width=canvas.height=1;
+    }catch(error){
+      skipped++;
+      text('Aperçu indisponible pour cette image.');
+    }
+  }
+  const name=exportPathPart(mission.reference+' - '+diagnosticName(diagnostic))+'.pdf';
+  return {blob:pdf.output('blob'),name,skipped};
+}
+
+const pdfDialog=$('#pdfDialog');
+const pdfStatus=$('#pdfStatus');
+const pdfShare=$('#sharePdf');
+const pdfDownload=$('#downloadPdf');
+let pdfSession=null;
+
+$('#printMission').onclick=async()=>{
+  const mission=getMission();
+  if(!mission||pdfDialog.open)return;
+  const diagnostic=activeDiag;
+  const items=photos.filter(photo=>photo.missionId===mission.id&&getDiag(photo)===diagnostic);
+  const session={archive:null,payload:null};
+  pdfSession=session;
+  pdfShare.hidden=true;
+  pdfDownload.disabled=true;
+  pdfStatus.textContent='Préparation du PDF…';
+  pdfDialog.showModal();
+  try{
+    const archive=await buildMissionPdf(mission,diagnostic,items);
+    if(pdfSession!==session||!pdfDialog.open)return;
+    session.archive=archive;
+    session.payload={files:[new File([archive.blob],archive.name,{type:'application/pdf'})]};
+    pdfShare.hidden=!(navigator.share&&navigator.canShare?.(session.payload));
+    pdfDownload.disabled=false;
+    pdfStatus.textContent=archive.skipped
+      ? 'PDF prêt. Certaines images n’ont pas pu être affichées.'
+      : 'PDF prêt. Partagez-le pour choisir Imprimer, ou téléchargez-le.';
+  }catch(error){
+    if(pdfSession===session)pdfStatus.textContent='Impossible de préparer le PDF. '+error.message;
+  }
+};
+pdfDownload.onclick=()=>{
+  if(pdfSession?.archive)download(pdfSession.archive.blob,pdfSession.archive.name);
+};
+pdfShare.onclick=async()=>{
+  const session=pdfSession;
+  if(!session?.payload)return;
+  pdfShare.disabled=true;
+  try{await navigator.share(session.payload)}catch(error){
+    if(pdfSession===session&&error.name!=='AbortError'){
+      pdfStatus.textContent='Partage indisponible. Vous pouvez télécharger le PDF.';
+    }
+  }finally{pdfShare.disabled=false}
+};
+$('#closePdf').onclick=()=>pdfDialog.close();
+pdfDialog.addEventListener('close',()=>{if(!pdfDialog.open)pdfSession=null});
+
+const driveDialog=$('#driveDialog');
+
+// ===== Sauvegarde automatique Google Drive =====
+const DRIVE_API='https://www.googleapis.com/drive/v3/files';
+const DRIVE_UPLOAD='https://www.googleapis.com/upload/drive/v3/files';
+const DRIVE_SCOPE='https://www.googleapis.com/auth/drive.file';
+const DRIVE_FOLDER='application/vnd.google-apps.folder';
+const DRIVE_KEY='sitereport-google';
+const DRIVE_TRASH_KEY='sitereport-drive-trash';
+const driveClientId=String(window.SITEREPORT_CONFIG?.googleClientId||'').trim();
+const insideClaude=Boolean(window.claude&&typeof window.claude.use==='function');
+let driveTokenClient=null,driveTimer=null,driveRunning=false,driveAgain=false,driveWriting=false,driveRootId=null,driveMessage='';
+
+function driveState(){try{return JSON.parse(localStorage.getItem(DRIVE_KEY)||'{}')||{}}catch{return {}}}
+function setDriveState(state){try{localStorage.setItem(DRIVE_KEY,JSON.stringify(state))}catch{}}
+function driveToken(){const s=driveState();return s.token&&s.expires>Date.now()+60000?s.token:null}
+function driveWanted(){return Boolean(driveState().connected)}
+function driveAvailable(){return Boolean(driveClientId)&&!insideClaude}
+function driveTrash(){try{return JSON.parse(localStorage.getItem(DRIVE_TRASH_KEY)||'[]')}catch{return []}}
+function addDriveTrash(ids){const list=[...new Set([...driveTrash(),...ids.filter(Boolean)])];try{localStorage.setItem(DRIVE_TRASH_KEY,JSON.stringify(list))}catch{}}
+function setDriveTrash(list){try{localStorage.setItem(DRIVE_TRASH_KEY,JSON.stringify(list))}catch{}}
+
+function loadGoogleScript(){
+  if(window.google?.accounts?.oauth2)return Promise.resolve();
+  return new Promise((resolve,reject)=>{
+    const script=document.createElement('script');
+    script.src='https://accounts.google.com/gsi/client';
+    script.async=true;
+    script.onload=()=>resolve();
+    script.onerror=()=>reject(new Error('Connexion à Google impossible. Vérifiez le réseau.'));
+    document.head.append(script);
+  });
+}
+async function requestDriveToken(prompt){
+  await loadGoogleScript();
+  return new Promise((resolve,reject)=>{
+    driveTokenClient=google.accounts.oauth2.initTokenClient({
+      client_id:driveClientId,
+      scope:DRIVE_SCOPE,
+      callback:response=>{
+        if(response.error){reject(new Error('Connexion Google refusée.'));return}
+        setDriveState({...driveState(),connected:true,token:response.access_token,expires:Date.now()+Number(response.expires_in||3600)*1000});
+        resolve();
+      },
+      error_callback:()=>reject(new Error('Fenêtre Google fermée.'))
+    });
+    driveTokenClient.requestAccessToken({prompt});
+  });
+}
+class DriveAuthError extends Error{}
+async function gfetch(url,options={}){
+  const token=driveToken();
+  if(!token)throw new DriveAuthError('Reconnexion à Google nécessaire.');
+  const response=await fetch(url,{...options,headers:{...(options.headers||{}),Authorization:'Bearer '+token}});
+  if(response.status===401){setDriveState({...driveState(),token:null,expires:0});throw new DriveAuthError('Reconnexion à Google nécessaire.')}
+  if(!response.ok){const error=new Error('Google Drive a répondu '+response.status+'.');error.status=response.status;throw error}
+  return response;
+}
+async function gjson(url,options){return (await gfetch(url,options)).json()}
+function driveQuery(q,fields='files(id,name,parents,appProperties),nextPageToken',pageToken=''){
+  return DRIVE_API+'?spaces=drive&pageSize=1000&fields='+encodeURIComponent(fields)+'&q='+encodeURIComponent(q)+(pageToken?'&pageToken='+encodeURIComponent(pageToken):'');
+}
+async function driveList(q){
+  const files=[];let pageToken='';
+  do{const page=await gjson(driveQuery(q,undefined,pageToken));files.push(...(page.files||[]));pageToken=page.nextPageToken||''}while(pageToken);
+  return files;
+}
+async function driveCreateFolder(name,parent,props){
+  return (await gjson(DRIVE_API+'?fields=id',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({name,mimeType:DRIVE_FOLDER,parents:parent?[parent]:undefined,appProperties:props})})).id;
+}
+function multipartBody(meta,blob,type){
+  const boundary='sitereport'+Math.random().toString(36).slice(2);
+  return {boundary,body:new Blob(['--'+boundary+'\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n'+JSON.stringify(meta)+
+    '\r\n--'+boundary+'\r\nContent-Type: '+type+'\r\n\r\n',blob,'\r\n--'+boundary+'--'])};
+}
+async function driveUpload(meta,blob,type){
+  const {boundary,body}=multipartBody(meta,blob,type);
+  return (await gjson(DRIVE_UPLOAD+'?uploadType=multipart&fields=id',{method:'POST',headers:{'Content-Type':'multipart/related; boundary='+boundary},body})).id;
+}
+async function driveRename(id,name){await gfetch(DRIVE_API+'/'+encodeURIComponent(id)+'?fields=id',{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({name})})}
+async function driveMove(id,from,to){await gfetch(DRIVE_API+'/'+encodeURIComponent(id)+'?fields=id&addParents='+encodeURIComponent(to)+(from?'&removeParents='+encodeURIComponent(from):''),{method:'PATCH',headers:{'Content-Type':'application/json'},body:'{}'})}
+async function driveWriteJson(id,data){await gfetch(DRIVE_UPLOAD+'/'+encodeURIComponent(id)+'?uploadType=media&fields=id',{method:'PATCH',headers:{'Content-Type':'application/json; charset=UTF-8'},body:JSON.stringify(data,null,2)})}
+async function driveRoot(){
+  if(driveRootId)return driveRootId;
+  const found=await driveList("appProperties has { key='sitereport' and value='root' } and trashed=false");
+  driveRootId=found[0]?.id||await driveCreateFolder('SiteReport',null,{sitereport:'root'});
+  return driveRootId;
+}
+function patchRecord(name,id,fields){
+  return write(name,transaction=>{
+    const objectStore=transaction.objectStore(name);
+    const request=objectStore.get(id);
+    request.onsuccess=()=>{if(request.result)objectStore.put({...request.result,...fields})};
+  });
+}
+function photoBlob(photo){
+  const [head,body]=photo.data.split(',');
+  return new Blob([Uint8Array.from(atob(body),c=>c.charCodeAt(0))],{type:/^data:([^;]+)/.exec(head)?.[1]||'image/jpeg'});
+}
+function missionFolderName(m){return exportPathPart([m.name||'Sans adresse',m.reference].filter(Boolean).join(' - '))}
+function drivePending(){
+  let count=driveTrash().length;
+  for(const m of missions){
+    if(!m.driveFolderId||m.driveFolderName!==missionFolderName(m))count++;
+    if(imageType(m.facade)&&m.driveFacadeUpdated!==m.facadeUpdated)count++;
+    for(const p of photos.filter(p=>p.missionId===m.id)){
+      if(!p.driveFileId||p.driveName!==fileName(p)||p.driveParent!==m.driveDiagFolders?.[getDiag(p)])count++;
+    }
+  }
+  return count;
+}
+async function syncMissionToDrive(mission,root,onProgress){let done=0;
+  let m={...mission};
+  const changeMission=async fields=>{m={...m,...fields};await patchRecord('missions',m.id,fields)};
+  const folderName=missionFolderName(m);
+  if(!m.driveFolderId){
+    await changeMission({driveFolderId:await driveCreateFolder(folderName,root,{sitereport:'missionFolder',missionId:m.id}),driveFolderName:folderName,driveDiagFolders:{},driveInfosFolder:null,driveJsonId:null,driveJsonParent:null});
+  }else if(m.driveFolderName!==folderName){
+    try{await driveRename(m.driveFolderId,folderName)}catch(error){if(error.status!==404)throw error;await changeMission({driveFolderId:null});return syncMissionToDrive({...mission,driveFolderId:null,driveDiagFolders:{},driveJsonId:null,driveInfosFolder:null,driveJsonParent:null},root)}
+    await changeMission({driveFolderName:folderName});
+  }
+  for(const photo of photos.filter(p=>p.missionId===m.id)){
+    const code=getDiag(photo);
+    let folder=m.driveDiagFolders?.[code];
+    if(!folder){
+      folder=await driveCreateFolder(exportPathPart(diagnosticName(code)),m.driveFolderId,{sitereport:'diagnostic',missionId:m.id,code});
+      await changeMission({driveDiagFolders:{...(m.driveDiagFolders||{}),[code]:folder}});
+    }
+    const name=fileName(photo);
+    if(photo.driveFileId&&photo.driveName===name&&photo.driveParent===folder){if(onProgress)onProgress(++done);continue}
+    try{
+      if(!photo.driveFileId)throw Object.assign(new Error('nouvelle'),{status:404});
+      if(photo.driveName!==name)await driveRename(photo.driveFileId,name);
+      if(photo.driveParent!==folder)await driveMove(photo.driveFileId,photo.driveParent,folder);
+      await patchRecord('photos',photo.id,{driveName:name,driveParent:folder});
+    }catch(error){
+      if(error.status!==404)throw error;
+      const id=await driveUpload({name,parents:[folder],appProperties:{sitereport:'photo',photoId:photo.id,missionId:m.id}},photoBlob(photo),photoBlob(photo).type);
+      await patchRecord('photos',photo.id,{driveFileId:id,driveName:name,driveParent:folder});
+    }
+    driveMessage='Envoi des photos vers Drive…';updateDriveUi();
+    if(onProgress)onProgress(++done);
+  }
+  if(!m.driveInfosFolder){
+    await changeMission({driveInfosFolder:await driveCreateFolder('_infos',m.driveFolderId,{sitereport:'infos',missionId:m.id})});
+  }
+  if(m.driveJsonId&&m.driveJsonParent!==m.driveInfosFolder){
+    try{await driveMove(m.driveJsonId,m.driveFolderId,m.driveInfosFolder);await changeMission({driveJsonParent:m.driveInfosFolder})}
+    catch(error){if(error.status!==404)throw error;await changeMission({driveJsonId:null})}
+  }
+  if(imageType(m.facade)&&m.driveFacadeUpdated!==m.facadeUpdated){
+    let folder=m.driveDiagFolders?.F;
+    if(!folder){folder=await driveCreateFolder('Façade',m.driveFolderId,{sitereport:'diagnostic',missionId:m.id,code:'F'});await changeMission({driveDiagFolders:{...(m.driveDiagFolders||{}),F:folder}})}
+    const blob=photoBlob({data:m.facade});
+    let id=m.driveFacadeId;
+    try{
+      if(!id)throw Object.assign(new Error('nouvelle'),{status:404});
+      await gfetch(DRIVE_UPLOAD+'/'+encodeURIComponent(id)+'?uploadType=media&fields=id',{method:'PATCH',headers:{'Content-Type':blob.type},body:blob});
+    }catch(error){
+      if(error.status!==404)throw error;
+      id=await driveUpload({name:'facade-'+compactName(m.reference)+'.jpg',parents:[folder],appProperties:{sitereport:'facade',missionId:m.id}},blob,blob.type);
+    }
+    await changeMission({driveFacadeId:id,driveFacadeUpdated:m.facadeUpdated});
+  }
+  const fresh=await req(store('photos').index('missionId').getAll(m.id));
+  const {facade:_f,...missionMeta}=m;
+  const snapshot={app:'SiteReport',version:1,mission:missionMeta,photos:fresh.map(({data,...meta})=>meta)};
+  const text=JSON.stringify(snapshot);
+  const hash=crc(new TextEncoder().encode(text));
+  if(m.driveJsonId&&m.driveJsonHash===hash)return;
+  try{
+    if(!m.driveJsonId)throw Object.assign(new Error('nouveau'),{status:404});
+    await driveWriteJson(m.driveJsonId,snapshot);
+  }catch(error){
+    if(error.status!==404)throw error;
+    const id=await driveUpload({name:'mission.json',parents:[m.driveInfosFolder],appProperties:{sitereport:'mission',missionId:m.id}},new Blob([JSON.stringify(snapshot,null,2)]),'application/json');
+    m.driveJsonId=id;m.driveJsonParent=m.driveInfosFolder;
+  }
+  await patchRecord('missions',m.id,{driveJsonId:m.driveJsonId,driveJsonHash:hash,driveJsonParent:m.driveJsonParent||null});
+}
+async function syncCountersToDrive(root){
+  const state=driveState();
+  const data={app:'SiteReport',counters:refCounters()};
+  if(state.countersId){
+    try{await driveWriteJson(state.countersId,data);return}catch(error){if(error.status!==404)throw error}
+  }
+  const found=await driveList("appProperties has { key='sitereport' and value='counters' } and trashed=false");
+  const id=found[0]?.id||await driveUpload({name:'compteurs-references.json',parents:[root],appProperties:{sitereport:'counters'}},new Blob(['{}']),'application/json');
+  setDriveState({...driveState(),countersId:id});
+  await driveWriteJson(id,data);
+}
+async function runDriveSync(){
+  if(driveRunning){driveAgain=true;return}
+  if(!driveAvailable()||!driveWanted()||!navigator.onLine||!db)return updateDriveUi();
+  if(!driveToken()){driveMessage='Reconnectez Google Drive pour reprendre la sauvegarde.';return updateDriveUi()}
+  driveRunning=true;driveWriting=true;driveMessage='Synchronisation avec Drive…';updateDriveUi();
+  try{
+    const root=await driveRoot();
+    const trash=driveTrash();
+    for(const id of trash){
+      try{await gfetch(DRIVE_API+'/'+encodeURIComponent(id),{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({trashed:true})})}
+      catch(error){if(error.status!==404)throw error}
+      setDriveTrash(driveTrash().filter(x=>x!==id));
+    }
+    for(const mission of [...missions])await syncMissionToDrive(mission,root);
+    await syncCountersToDrive(root);
+    setDriveState({...driveState(),lastSync:new Date().toISOString()});
+    driveMessage='';
+  }catch(error){
+    driveMessage=error instanceof DriveAuthError?'Reconnectez Google Drive pour reprendre la sauvegarde.':'Sauvegarde Drive interrompue : '+error.message+' Nouvel essai automatique.';
+    if(!(error instanceof DriveAuthError))setTimeout(scheduleDriveSync,60000);
+  }finally{
+    await load();
+    driveWriting=false;driveRunning=false;updateDriveUi();
+    if(driveAgain){driveAgain=false;scheduleDriveSync()}
+  }
+}
+function scheduleDriveSync(){
+  if(driveWriting){driveAgain=true;return}
+  clearTimeout(driveTimer);
+  updateDriveUi();
+  if(driveAvailable()&&driveWanted())driveTimer=setTimeout(runDriveSync,2000);
+}
+async function restoreFromDrive(){
+  driveMessage='Recherche de vos missions dans Drive…';updateDriveUi();
+  const files=await driveList("appProperties has { key='sitereport' and value='mission' } and trashed=false");
+  let added=0,addedPhotos=0;
+  driveWriting=true;
+  try{
+    for(const file of files){
+      const snapshot=await gjson(DRIVE_API+'/'+encodeURIComponent(file.id)+'?alt=media');
+      const mission=snapshot?.mission;
+      if(!mission||typeof mission.id!=='string'||typeof mission.codes!=='string')continue;
+      if(!missions.some(m=>m.id===mission.id)){
+        let facade;
+        if(mission.driveFacadeId){try{const raw=await (await gfetch(DRIVE_API+'/'+encodeURIComponent(mission.driveFacadeId)+'?alt=media')).blob();const d=await dataURL(raw.type.startsWith('image/')?raw:new Blob([raw],{type:'image/jpeg'}));if(imageType(d))facade=d}catch(error){if(error instanceof DriveAuthError)throw error}}
+        await put('missions',{...mission,driveJsonId:file.id,...(facade?{facade}:{})});added++;
+      }
+      for(const meta of snapshot.photos||[]){
+        if(!meta?.id||!meta.driveFileId||photos.some(p=>p.id===meta.id))continue;
+        driveMessage='Téléchargement des photos… ('+(addedPhotos+1)+')';updateDriveUi();
+        const raw=await (await gfetch(DRIVE_API+'/'+encodeURIComponent(meta.driveFileId)+'?alt=media')).blob();
+        const blob=raw.type.startsWith('image/')?raw:new Blob([raw],{type:'image/jpeg'});
+        const data=await dataURL(blob);
+        if(!imageType(data))continue;
+        await put('photos',{...meta,missionId:mission.id,data});
+        addedPhotos++;
+      }
+      missions=await req(store('missions').getAll());photos=await req(store('photos').getAll());
+    }
+    const counters=await driveList("appProperties has { key='sitereport' and value='counters' } and trashed=false");
+    if(counters[0]){mergeCounters((await gjson(DRIVE_API+'/'+encodeURIComponent(counters[0].id)+'?alt=media'))?.counters);setDriveState({...driveState(),countersId:counters[0].id})}
+  }finally{driveWriting=false}
+  driveMessage='';
+  await load();
+  toast(added+' mission(s) et '+addedPhotos+' photo(s) récupérées');
+}
+function updateDriveUi(){
+  const label=$('#backupLabel');
+  const status=$('#driveSyncStatus');
+  if(!label||!status)return;
+  const pending=db?drivePending():0;
+  const wanted=driveWanted()&&driveAvailable();
+  const token=Boolean(driveToken());
+  $('#driveConnect').hidden=wanted&&token;
+  $('#driveConnect').textContent=wanted?'Reconnecter Google Drive':'Connecter Google Drive';
+  $('#driveConnect').disabled=!driveAvailable();
+  $('#driveSyncNow').hidden=!(wanted&&token);
+  $('#driveRestore').hidden=!(wanted&&token);
+  $('#driveDisconnect').hidden=!wanted;
+  if(insideClaude)status.textContent='La sauvegarde Google Drive fonctionne sur votre version installée (Surface ou adresse HTTPS), pas dans Claude.';
+  else if(!driveClientId)status.textContent='Ajoutez votre identifiant Google dans config.js pour activer la sauvegarde automatique (voir LISEZ-MOI).';
+  else if(!wanted)status.textContent='Connectez votre compte Google : chaque mission et ses photos renommées seront copiées automatiquement dans le dossier « SiteReport » de votre Drive.';
+  else if(driveMessage)status.textContent=driveMessage;
+  else if(!navigator.onLine)status.textContent='Hors ligne : '+pending+' élément(s) seront envoyés au retour du réseau.';
+  else if(pending)status.textContent=pending+' élément(s) en attente d’envoi vers Drive.';
+  else{const last=driveState().lastSync;status.textContent='Tout est sauvegardé dans Google Drive'+(last?' (dernière synchro '+new Date(last).toLocaleString('fr-FR',{dateStyle:'short',timeStyle:'short'})+')':'')+'.'}
+  const state=!wanted?'off':!token?'alert':driveRunning?'busy':(driveMessage&&!driveRunning)?'alert':pending?'wait':'ok';
+  label.textContent={off:'Sauvegarde',alert:'Reconnecter',busy:'Envoi…',wait:pending+' en attente',ok:'À jour'}[state];
+  if(state==='alert'&&token)label.textContent='Erreur';
+  $('#backupBtn').className='badge state-'+state;
+}
+$('#driveConnect').onclick=async()=>{
+  try{
+    await requestDriveToken(driveWanted()?'':'consent');
+    driveMessage='';
+    toast('Google Drive connecté');
+    runDriveSync();
+  }catch(error){driveMessage=error.message;updateDriveUi()}
+};
+$('#driveSyncNow').onclick=()=>runDriveSync();
+$('#driveRestore').onclick=async()=>{
+  if(!confirm('Récupérer les missions et photos enregistrées dans votre Google Drive ?'))return;
+  try{await restoreFromDrive()}catch(error){driveMessage='Récupération impossible : '+error.message;updateDriveUi()}
+};
+$('#driveDisconnect').onclick=()=>{
+  if(!confirm('Arrêter la sauvegarde automatique vers Google Drive ? Les fichiers déjà envoyés restent dans votre Drive.'))return;
+  const token=driveState().token;
+  if(token&&window.google?.accounts?.oauth2)google.accounts.oauth2.revoke(token,()=>{});
+  setDriveState({});driveMessage='';updateDriveUi();
+};
+window.addEventListener('online',scheduleDriveSync);
+window.addEventListener('offline',updateDriveUi);
+// Données protégées contre l'effacement automatique du navigateur
+navigator.storage?.persist?.().catch(()=>{});
+// ===== Fenêtre « Envoyer vers Google Drive » =====
+const SEND_ICONS={"ok": "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"m8 12.5 2.7 2.7L16 9.8\"/></svg>", "off": "<svg viewBox=\"0 0 24 24\"><path d=\"M7 18a4.5 4.5 0 0 1-.6-9 6 6 0 0 1 11.6 1.5A3.8 3.8 0 0 1 17.5 18Z\"/><path d=\"m4 4 16 16\"/></svg>", "busy": "<svg viewBox=\"0 0 24 24\"><path d=\"M7 18a4.5 4.5 0 0 1-.6-9 6 6 0 0 1 11.6 1.5A3.8 3.8 0 0 1 17.5 18Z\"/><path d=\"M12 15V10m-2.5 2.5L12 10l2.5 2.5\"/></svg>", "drive": "<svg viewBox=\"0 0 24 24\"><path d=\"M9 3h6l6 10.5-3 5.5H6l-3-5.5Zm0 0 6 10.5M15 3 9 13.5M3 13.5h18\"/></svg>", "alert": "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5v5.5m0 3v.01\"/></svg>"};
+let sendMissionId=null;
+function sendView({icon,tone,title,text,folder,progress,main,open}){
+  $('#driveIcon').innerHTML=SEND_ICONS[icon];$('#driveIcon').className='send-icon tone-'+(tone||'grey');
+  $('#driveTitle').textContent=title;$('#driveText').textContent=text||'';
+  $('#driveFolder').hidden=!folder;if(folder)$('#driveFolder').innerHTML=folder;
+  $('#driveProgress').hidden=progress==null;if(progress!=null)$('#driveBar').style.width=Math.round(progress*100)+'%';
+  $('#driveMain').hidden=!main;if(main){$('#driveMain').textContent=main.label;$('#driveMain').onclick=main.run}
+  $('#driveOpen').hidden=!open;if(open)$('#driveOpen').href=open;
+  $('#driveMain').disabled=false;
+}
+function folderSummary(m){
+  const present=new Set(photos.filter(p=>p.missionId===m.id).map(getDiag));const used=DIAGS.map(d=>d[0]).filter(c=>present.has(c)).map(diagnosticName);
+  return '<strong>'+safe(missionFolderName(m))+'</strong><span>'+safe(used.join(' · ')||'Aucune photo pour le moment')+'</span>';
+}
+function downloadMissionFolder(){const m=missions.find(x=>x.id===sendMissionId);if(!m)return;const archive=buildMissionArchive(m);download(archive.blob,archive.name).then(ok=>{if(ok)toast('Dossier téléchargé')})}
+async function sendMissionNow(){
+  const m=missions.find(x=>x.id===sendMissionId);if(!m)return;
+  const total=photos.filter(p=>p.missionId===m.id).length;
+  $('#closeDrive').textContent='Fermer';
+  sendView({icon:'busy',tone:'grey',title:'Envoi en cours…',text:'Envoi des photos… 0 / '+total,folder:folderSummary(m),progress:0});
+  while(driveRunning)await new Promise(r=>setTimeout(r,300));
+  driveRunning=true;driveWriting=true;updateDriveUi();
+  try{
+    const root=await driveRoot();
+    await syncMissionToDrive(m,root,(done)=>{if(driveDialog.open){$('#driveText').textContent='Envoi des photos… '+done+' / '+total;$('#driveBar').style.width=Math.round(done/Math.max(total,1)*100)+'%'}});
+    await syncCountersToDrive(root);
+    setDriveState({...driveState(),lastSync:new Date().toISOString()});driveMessage='';
+    const fresh=await req(store('missions').get(m.id));
+    sendView({icon:'ok',tone:'green',title:'Mission envoyée',text:total+' photo'+(total>1?'s':'')+' dans Google Drive',folder:folderSummary(fresh||m),open:fresh?.driveFolderId?'https://drive.google.com/drive/folders/'+encodeURIComponent(fresh.driveFolderId):'https://drive.google.com/'});
+  }catch(error){
+    if(error instanceof DriveAuthError){showSendDialog();return}
+    sendView({icon:'alert',tone:'red',title:'Envoi interrompu',text:'Vérifiez le réseau puis réessayez. Les photos restent en sécurité dans l’appareil.',main:{label:'Réessayer',run:sendMissionNow}});
+  }finally{
+    driveWriting=false;driveRunning=false;await load();
+  }
+}
+function showSendDialog(){
+  const m=missions.find(x=>x.id===sendMissionId);if(!m)return;
+  if(insideClaude){
+    sendView({icon:'drive',title:'Disponible sur votre appli installée',text:'Ici, téléchargez le dossier : il contient la mission, rangée par module.',main:{label:'Télécharger le dossier',run:downloadMissionFolder}});
+  }else if(!driveClientId){
+    sendView({icon:'drive',title:'Google Drive pas encore configuré',text:'Suivez la partie « Sauvegarde Google Drive » du LISEZ-MOI. En attendant, téléchargez le dossier.',main:{label:'Télécharger le dossier',run:downloadMissionFolder}});
+  }else if(!driveWanted()||!driveToken()){
+    const again=driveWanted();
+    sendView({icon:'off',title:again?'Reconnecter Google Drive':'Connecter Google Drive',text:again?'Google demande de confirmer votre compte, puis l’envoi démarre.':'Une seule fois : ensuite, vos missions s’envoient avec leurs dossiers par module.',
+      main:{label:again?'Reconnecter':'Connecter Google Drive',run:async()=>{$('#driveMain').disabled=true;try{await requestDriveToken(again?'':'consent');sendMissionNow()}catch(error){sendView({icon:'alert',tone:'red',title:'Connexion impossible',text:error.message,main:{label:'Réessayer',run:showSendDialog}})}}}});
+    $('#closeDrive').textContent='Plus tard';
+    if(!driveDialog.open)driveDialog.showModal();
+    return;
+  }else{
+    if(!driveDialog.open)driveDialog.showModal();
+    $('#closeDrive').textContent='Fermer';
+    sendMissionNow();return;
+  }
+  $('#closeDrive').textContent='Fermer';
+  if(!driveDialog.open)driveDialog.showModal();
+}
+function pickFacade(missionId){importTarget={missionId,facade:true};$('#facadeInput').click()}
+let sheetMission=null;
+function openFacadeSheet(missionId){sheetMission=missionId;$('#facadeSheet').classList.add('open');setTimeout(()=>$('#sheetTake').focus(),30)}
+function closeFacadeSheet(){$('#facadeSheet').classList.remove('open')}
+$('#sheetTake').onclick=()=>{closeFacadeSheet();openCameraFor({missionId:sheetMission,facade:true})};
+$('#sheetPick').onclick=()=>{closeFacadeSheet();pickFacade(sheetMission)};
+$('#sheetCancel').onclick=closeFacadeSheet;
+$('#facadeSheet').onclick=e=>{if(e.target===e.currentTarget)closeFacadeSheet()};
+$('#facadeInput').onchange=event=>$('#fileInput').onchange(event);
+$('#facadePick').onclick=()=>{$('#facadeDialog').close();pickFacade(active)};
+$('#facadeNow').onclick=()=>{$('#facadeDialog').close();openCameraFor({missionId:active,facade:true})};
+$('#facadeLater').onclick=()=>$('#facadeDialog').close();
+$('#sendMission').onclick=()=>{sendMissionId=active;showSendDialog()};
+$('#closeDrive').onclick=()=>driveDialog.close();
+
+
+openDB().then(d=>{db=d;return load()}).then(()=>{$('#missionDate').value=localDate();drawPicker();updateRef()}).catch(err=>alert('Stockage indisponible : '+err.message));
+for(const [selector,event] of [
+  ['#missionForm','submit'],['#photoForm','submit'],['#saveDiagnostics','click'],
+  ['#deleteMission','click'],['#removePhoto','click'],['#exportMission','click'],['#sendMission','click']
+]){
+  const element=$(selector);
+  const property='on'+event;
+  const handler=element[property];
+  element[property]=async input=>{
+    if(!db){input.preventDefault();toast('Stockage local indisponible');return}
+    try{await handler(input)}catch(error){alert('Opération impossible. '+error.message)}
+  };
+}
+if('serviceWorker' in navigator && (window.isSecureContext&&/^https?:$/.test(location.protocol))){navigator.serviceWorker.register('./sw.js').catch(()=>{});}
+</script></body></html>
