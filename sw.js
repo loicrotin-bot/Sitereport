@@ -1,4 +1,4 @@
-const CACHE = 'missionphoto-v5-static-r41';
+const CACHE = 'missionphoto-v5-static-r42';
 const FILES = ['./index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './google-drive.png', './jspdf.umd.min.js', './sitereport-logo.svg', './config.js'];
 
 self.addEventListener('install', event => {
